@@ -12,7 +12,7 @@ html, body {
     z-index: 6;
   }
 
-  #star-1 {
+#star-1 {
     padding-top: 0%;
     padding-bottom: 0%;
     margin-top: 5%;
@@ -22,7 +22,7 @@ html, body {
     z-index: 6;
   }
 
-  #star-2 {
+#star-2 {
     padding-top: 0%;
     padding-bottom: 0%;
     margin-top: 5%;
@@ -32,21 +32,21 @@ html, body {
     z-index: 6;
   }
 
-  @keyframes twinkle-1 {
+@keyframes twinkle-1 {
     20% {
       transform: scale(0.5);
       opacity: 0.3;
     }
   }
 
-  @keyframes twinkle-2 {
+@keyframes twinkle-2 {
     20% {
       transform: scale(0.5);
       opacity: 0.3;
     }
   }
 
-  #back {
+#back {
     position: fixed;
     padding: 0;
     margin: 0;
@@ -58,11 +58,12 @@ html, body {
     z-index: -1
   }
 
-   h1 {
+h1 {
     color: white;
     font-family: "Arial";
 }
-   h3 {
+
+h3 {
      text-align: justify;
    }
 
@@ -71,48 +72,99 @@ html, body {
    }
 
 
-  #starbox {
+#starbox {
 
   }
 
-  #telescope-box {
+#telescope-box {
     
-      height: 320px;
+      height: 325px;
   }
   
-  @keyframes hover-expand {
+@keyframes hover-expand {
     100% {
       transform: scale(1.01);
       
     }
   }
 
-  #reflector {
+/* #reflector {
        border: 4px solid;
        border-color: pink;
        background-color: white;
        border-radius: 10%;
-       padding: 5px;
+       padding: 7px;
        float: left;
        margin-left: 23%;
        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
-  }
-  #reflector:hover {
+  } */
+
+/* #reflector:hover {
       animation-name: hover-expand;
       animation-duration: 150ms;
       animation-fill-mode: forwards;
-      
+  } */
 
+.reflector_img__wrap {
+    position: relative;
+    height: 200px;
+    width: 240px;
+    border: 4px solid;
+    border-color: pink;
+    background-color: white;
+    border-radius: 10%;
+    padding: 7px;
+    float: left;
+    margin-left: 23%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+.reflector_img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 9%;
+    background: rgba(29, 106, 154, 0.72);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
   }
 
-  #reflector:hover ~ #text-box{
+.reflector_img__description_text {
+  color: white;
+  font-size: 25px;
+  visibility: hidden;
+}
+  
+.reflector_img__wrap:hover .reflector_img__description {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.reflector_img__wrap:hover .reflector_img__description_text {
+    visibility: visible;
+    opacity: 1;
+    padding-left: 30%;
+    padding-top: 22%;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: opacity .2s, visibility .2s;
+  }
+
+.reflector_img__wrap:hover ~ .text-box{
+    visibility: visible;
+    background-color: black;
+    opacity: 1;
+}
+/* #reflector:hover ~ #text-box{
        display:block;
        background-color: black;
-  }
+  } */
   
   
-  #refractor {
+#refractor {
       border: 4px solid;
       border-color: pink;
       background-color: white;
@@ -123,17 +175,12 @@ html, body {
       margin-right: 80px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
-  }
+}
 
-  #refractor:hover {
+#refractor:hover {
     animation-name: hover-expand;
     animation-duration: 150ms;
     animation-fill-mode: forwards;
-}
-
-  #refractor:hover ~ .text-box{
-     display: block;
-     background-color: black;
 }
 
   #catadioptric {
@@ -154,23 +201,21 @@ html, body {
 }
 
   #catadioptric:hover ~ .text-box{
-     display:block;
+     visibility: visible;
      background-color: black;
 }
 
-  #text-box {
+  .text-box {
     text-align: center;
     width: 400px;
     padding-left: 40%;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 40px;
-    display: none;
+    visibility: hidden;
   }
 
-  p {
-    
-}
+  
 
   /* margin-left: 15%;
   padding-left: 10%;
