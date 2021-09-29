@@ -2,20 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Learn About Telescopes</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="astrostyle.css" media="screen"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
   </head>
   <header>
-    <div id="starbox">
+    <!--<div id="starbox-1">
       <div class="stars" id="star-1"></div>
       <div class="stars" id="star-2"></div>
       <div class="stars" id="star-3"></div>
-    </div>
+    </div>-->
     <h1 class="centered-text"><u>Types of Telescopes</u></h1>
     <br>
     <br>
@@ -23,7 +23,7 @@
     <div id="back"></div>
   </header>
   <body>
-  <script src="bootstrap.min.js"></script>
+  
     <div id="telescope-box">
       <div class="reflector_img__wrap">
         <img src="reflector.jpg" alt="Newtonian Reflector Telescope" style="width:240px;height:200px";>
@@ -33,24 +33,32 @@
         </p>
       </div>
       </div>
-      <div id="refractor">
-        <h3>
-          <center>Refractor</center>
-        </h3>
-        <div>
-          <img src="refractor.jpg" alt="Refractor Telescope" style="width:346px;height:200px";>
-        </div>
+
+      <div class="refractor_img__wrap">
+        <img src="refractor.jpg" alt="Refractor Telescope" style="width:346px;height:200px";>
+            <div class="refractor_img__description">
+            <p class="refractor_img__description_text">
+            Refractor  
+            </p>
+            </div>
       </div>
-      <div id="catadioptric">
-        <h3>
-          <center>Catadioptric</center>
-        </h3>
-        <div>
-          <img src="catadioptric.jpg" alt="Catadiptric Telescope" style="width:300px;height:200px";>
-        </div>
+
+      <div class="catadioptric_img__wrap">
+        <img src="catadioptric.jpg" alt="Catadioptric Telescope" style="width:300px;height:200px";>
+            <div class="catadioptric_img__description">
+            <p class="catadioptric_img__description_text">
+            Catadioptric  
+            </p>
+            </div>
       </div>
-    </div>
-    <div class="text-box">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="reflector-text-box fade-in-text">
       This is example text that should show up when hovering over an image of the reflector telescope.
       In a reflector, light enters the telescope at the end opposite the primary mirror. The mirror is a 
       concave mirror. Similar to a convex lens, a concave mirror converges the light at the secondary 
@@ -58,7 +66,32 @@
       The convex lens in the eyepiece takes the converging light and straightens it back out. As with the 
       refractor, the image is still upside down. It appears as a virtual image beyond the telescope in 
       the direction the person is looking. 
+      </div>
+      <div class="refractor-text-box fade-in-text">
+      This is example text that should show up when hovering over an image of the reflector telescope.
+      Refracting telescopes work by using two lenses to focus the light and make it look like the object 
+      is closer to you than it really is. Both lenses are in a shape that’s called 'convex'. Convex 
+      lenses work by bending light inwards (like in the diagram). This is what makes the image look 
+      smaller. 
+      </div>
+      <div class="catadioptric-text-box fade-in-text">
+      This is example text that should show up when hovering over an image of the reflector telescope.
+      Well, whilst a reflector telescope uses mirrors and a refractor telescope uses lenses, a catadioptric 
+      telescope actually uses both. When the light comes through the telescope, it first passes through a 
+      collective lens. This lens is there to correct the image and helps to reduce any kind of aberration 
+      that may occur and distort the final image from reaching your eyes. The light then passes through to 
+      the primary mirrors, which are curved. This reflection is then cast onto the secondary mirror, which 
+      then comes through to the eyepiece.
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </div>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>  
   </body>
 </html>
