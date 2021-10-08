@@ -12,120 +12,112 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&display=swap">
       <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
       <!-- Font Awesome JS -->
       <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
       <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
    </head>
-   <header>
-      
-   </header>
    <body>
       <!-- ---------------SIDEBAR STARTS HERE--------------- -->
       <div class="wrapper">
-         <!-- Sidebar -->
-         <nav id="sidebar">
-            <div id="dismiss">
-               <i class="fas fa-arrow-left"></i>
+      <!-- Sidebar -->
+      <nav id="sidebar">
+         <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+         </div>
+         <div class="sidebar-header">
+            <h3>Menu</h3>
+         </div>
+         <ul class="list-unstyled components">
+            <p id="categories">Categories</p>
+            <li>
+               <a href="home.html">Home</a>
+               <a href="#">About</a>
+               <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Solar System</a>
+               <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li>
+                     <a href="#">Lunar</a>
+                  </li>
+                  <li>
+                     <a href="#">Solar</a>
+                  </li>
+                  <li>
+                     <a href="#">Planetary</a>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               
+               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Deep Space</a>
+               <ul class="collapse list-unstyled" id="pageSubmenu">
+                  <li>
+                     <a href="#">Emission Nebulae</a>
+                  </li>
+                  <li>
+                     <a href="#">Reflection Nebulae</a>
+                  </li>
+                  <li>
+                     <a href="#">Galaxies</a>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <a href="telescopes.html">Telescopes</a>
+            </li>
+            <li>
+               <a href="#">Observing</a>
+            </li>
+            <li>
+               <a href="references.html">Links/References</a>
+            </li>
+            <li>
+               <a href="software.html">Software</a>
+            </li>
+         </ul>
+      </nav>
+      <!-- ---------------Page Content--------------- -->
+      <div id="content">
+         <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+               <button type="button" id="sidebarCollapse" class="btn btn-light">
+               <i class="fas fa-align-left"></i>
+               <span>Menu</span>
+               </button>
             </div>
-            <div class="sidebar-header">
-               <h3>Backyard Astronomy</h3>
-            </div>
-            <ul class="list-unstyled components">
-               <p>What do you want to know?</p>
-               <li class="active">
-                  <a href="home.html">Home</a>
-                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Solar System</a>
-                  <ul class="collapse list-unstyled" id="homeSubmenu">
-                     <li>
-                        <a href="#">Lunar</a>
-                     </li>
-                     <li>
-                        <a href="#">Solar</a>
-                     </li>
-                     <li>
-                        <a href="#">Planetary</a>
-                     </li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="#">About</a>
-                  
-                  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Deep Space</a>
-                  <ul class="collapse list-unstyled" id="pageSubmenu">
-                     <li>
-                        <a href="#">Emission Nebulae</a>
-                     </li>
-                     <li>
-                        <a href="#">Reflection Nebulae</a>
-                     </li>
-                     <li>
-                        <a href="#">Galaxies</a>
-                     </li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="telescopes.html">Telescopes</a>
-               </li>
-               <li>
-                  <a href="#">Observing</a>
-               </li>
-               <li>
-                  <a href="references.html">Links/References</a>
-               </li>
-               <li>
-                  <a href="software.html">Software</a>
-               </li>
-
-            </ul>
          </nav>
-    <!-- ---------------Page Content--------------- -->
-         <div id="content">
-           
-            <nav class="navbar navbar-expand-lg">
-               <div class="container-fluid">
-                  <button type="button" id="sidebarCollapse" class="btn btn-light">
-                  <i class="fas fa-align-left"></i>
-                  <span>Menu</span>
-                  </button>
-               </div>
-            </nav>
-            <div id="telescope-box" class="row justify-content-center mb-2">
-                        <!--<div id="starbox-1">
-                  <div class="stars" id="star-1"></div>
-                  <div class="stars" id="star-2"></div>
-                  <div class="stars" id="star-3"></div>
-                  </div>-->
-               <div style="width:60%; text-align: center;">
-                <h1 class="row centered-text">Getting Started with Astronomy</h1>
-               </div>
-                  <div class="home-text-div"><p class="p-home">This site was created to help answer some of the 
-                   most common questions I get about backyard astronomy. Though there are many sites 
-                   like this on the internet, I endeavored to create one that is clean, easy to 
-                   navigate and contains only the information you might seek and nothing more. 
-                   This is my contribution to the astro-community.</p>
-
-                  <p class="p-home">By clicking on the menu bar in the top left, you can find links to pages that 
+         <div id="telescope-box" class="row justify-content-center mb-2">
+            <!--<div id="starbox-1">
+               <div class="stars" id="star-1"></div>
+               <div class="stars" id="star-2"></div>
+               <div class="stars" id="star-3"></div>
+               </div>-->
+            <div style="width:60%; text-align: center;">
+               <h1 class="row centered-text">Getting Started with Astronomy</h1>
+            </div>
+            <div class="home-text-div">
+               <p class="p-home">This site was created to help answer some of the 
+                  most common questions I get about backyard astronomy. Though there are many sites 
+                  like this on the internet, I endeavored to create one that is clean, easy to 
+                  navigate and contains only the information you might seek and nothing more. 
+                  This is my contribution to the astro-community.
+               </p>
+               <p class="p-home">By clicking on the menu bar in the top left, you can find links to pages that 
                   help you choose your first telescope, whether it be for the purpose of observation, 
                   astrophotography, or both, aimed at children, or adults, or outreach programs. You 
                   can also find information on how to get started in astrophotography, how to locate 
                   objects of interest in the night sky, recommended weather apps, and the software 
-                  that is available to help you in your journey, whether you use Windows, Mac, or Linux.</p>
-                  
-                  <p class="p-home">
+                  that is available to help you in your journey, whether you use Windows, Mac, or Linux.
+               </p>
+               <p class="p-home">
                   Clear skies, friends.
                   <br>
-                  -Seralyn</p>
-                  </div>
-                <div id="back"></div>
-               
-            
+                  -Seralyn
+               </p>
             </div>
-        </div>
+            <div id="back"></div>
+         </div>
+      </div>
       <!--SIDEBAR ENDS HERE-->   
-      
-
-
       <!--JAVASCRIPT/JQUERY STARTS HERE-->   
       <div class="overlay"></div>
       <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -156,8 +148,6 @@
          });
       </script>
       <!--JAVASCRIPT/JQUERY ENDS HERE-->
-
-
       <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>   -->
    </body>
 </html>

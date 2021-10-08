@@ -68,12 +68,13 @@ html, body {
   width: 100%;
   height: 100%;
   /* background: linear-gradient(black, #000099, #66c2ff, #000099, black); */
-  background: rgb(43, 43, 122);
+  background: #023E8A;
   z-index: -1 
 }
 h1 {
   color: white;
   font-family: 'Cabin', sans-serif;
+  
 }
 h3 {
   text-align: justify;
@@ -83,6 +84,10 @@ h3 {
   /* padding-top: 105px; */
 }
 
+#categories {
+  font-size: 24px;
+}
+
 .p-home {
   /* width: 60%; */
   color: aliceblue;
@@ -90,7 +95,13 @@ h3 {
 }
 
 .home-text-div {
-  width: 60%
+  width: 60%;
+  color: white;
+}
+
+.white-text-wide {
+    width: 95%;
+    color: white;
 }
 
 #starbox-1 {
@@ -383,6 +394,28 @@ h3 {
   top: 0;
   right: 0;
 }
+
+p {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+  font-style: italic;
+}
+
+h5 {
+  color: white;
+  font-style: italic;
+}
 /* ^^^^^^^^^^^^^^^^CONTENT STOPs HERE^^^^^^^^^^^^^^^^ */
 
 
@@ -398,8 +431,8 @@ h3 {
   left: -250px;
   height: 100vh;
   z-index: 999;
-  background: #7386D5;
-  color: #fff;
+  background: #03045E;
+  color: #ADE8F4;
   transition: all 0.3s;
   overflow-y: scroll;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -414,7 +447,7 @@ h3 {
   height: 35px;
   line-height: 35px;
   text-align: center;
-  background: #7386D5;
+  background: #0077B6;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -425,8 +458,18 @@ h3 {
 }
 
 #dismiss:hover {
-  background: #fff;
-  color: #7386D5;
+  background: #ADE8F4;
+  color: #0096C7;
+}
+
+.fa-arrow-left {
+  background: #0077B6 !important;
+  color: #48CAE4 !important;
+}
+
+.fa-arrow-left:hover {
+  background: #ADE8F4 !important;
+  color: #0096C7 !important;
 }
 
 .overlay {
@@ -444,18 +487,22 @@ h3 {
   opacity: 1;
 }
 
+.sidebar-header h3 {
+  color: #90E0EF;
+}
+
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #6d7fcc;
+  background: #023E8A;
 }
 
 #sidebar ul.components {
   padding: 20px 0;
-  border-bottom: 1px solid #47748b;
+  border-bottom: 1px solid #0077B6;
 }
 
 #sidebar ul p {
-  color: #fff;
+  color: #ADE8F4;
   padding: 10px;
 }
 
@@ -466,14 +513,14 @@ h3 {
 }
 
 #sidebar ul li a:hover {
-  color: #7386D5;
-  background: #fff;
+  color: #fff;
+  background: #00B4D8;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-  color: #fff;
-  background: #6d7fcc;
+  color: #fff !important;
+  background: #48CAE4;
 }
 
 a[data-toggle="collapse"] {
@@ -491,7 +538,7 @@ a[data-toggle="collapse"] {
 ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
-  background: #6d7fcc;
+  background: #0096C7;
 }
 
 ul.CTAs {
@@ -513,7 +560,7 @@ a.download {
 
 a.article,
 a.article:hover {
-  background: #6d7fcc !important;
+  background: #0077B6 !important;
   color: #fff !important;
 }
 
@@ -521,6 +568,16 @@ a, a:hover, a:focus {
   color: inherit;
   text-decoration: none;
   transition: all 0.3s;
+}
+
+.entry-content a{
+  text-decoration: underline !important;
+  color: orange !important;
+}
+
+.entry-content a:hover {
+  cursor: pointer;
+  
 }
 
 .navbar {
@@ -546,8 +603,14 @@ a, a:hover, a:focus {
 }
 
 .btn-light {
-  background-color: #5858c7 !important;
+  background-color: #03045E !important;
   border: 0 !important;
-  color: rgb(224, 225, 226) !important;
+  color: #fff !important;
 }
+
+/* .fas {
+  background: greenyellow !important;
+  border-color: pink !important;
+} */
+
 /* ^^^^^^^^^^^^^^^^SIDE BAR STOPS HERE^^^^^^^^^^^^^^^^ */
