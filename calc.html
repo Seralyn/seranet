@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Learn About Telescopes</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+      <link rel="stylesheet" href="astrostyle.css" type="text/css" media="screen"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&display=swap">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+      <!-- Font Awesome JS -->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <!-- ---------------SIDEBAR STARTS HERE--------------- -->
+      <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+           <div id="dismiss">
+              <i class="fas fa-arrow-left"></i>
+           </div>
+           <div class="sidebar-header">
+              <h3>Menu</h3>
+           </div>
+           <ul class="list-unstyled components">
+              <p id="categories">Categories</p>
+              <li>
+                 <a href="home.html">Home</a>
+                 <a href="about.html">About</a>
+                 <a href="telescopes.html">Telescopes</a>
+                 <a href="observing.html">Observing</a>
+                 <a href="#apSubmenu" data-toggle="collapse" aria-expanded="false">Astrophotography</a>
+                 <ul class="collapse list-unstyled" id="apSubmenu">
+                    
+                 <a href="widefield.html">Widefield</a>
+                    
+  
+                 <a href="#solarSubmenu" data-toggle="collapse" aria-expanded="false">Solar System</a>
+                 <ul class="collapse list-unstyled" id="solarSubmenu">
+                    <li>
+                       <a href="lunarphotog.html">Lunar</a>
+                    </li>
+                    <li>
+                       <a href="solarphotog.html">Solar</a>
+                    </li>
+                    <li>
+                       <a href="planetaryphotog.html">Planetary</a>
+                    </li>
+                 </ul>
+              </li>
+              <li>
+                 
+                 <a href="#deepspaceSubmenu" data-toggle="collapse" aria-expanded="false">Deep Space</a>
+                 <ul class="collapse list-unstyled" id="deepspaceSubmenu">
+                    <li>
+                       <a href="emissnebu.html">Emission Nebulae</a>
+                    </li>
+                    <li>
+                       <a href="reflneb.html">Reflection Nebulae</a>
+                    </li>
+                    <li>
+                       <a href="galaxies.html">Galaxies</a>
+                    </li>
+                 </ul>
+                 
+              </ul>
+  
+              </li>
+              
+              
+              <li>
+                 <a href="references.html">Links/References</a>
+              </li>
+              <li>
+                 <a href="#softSubmenu" data-toggle="collapse" aria-expanded="false">Software</a>
+                 <ul class="collapse list-unstyled" id="softSubmenu">
+                    <li>
+                       <a href="winsoft.html">Windows</a>
+                    </li>
+                    <li>
+                       <a href="macsoft.html">Mac OS</a>
+                    </li>
+                    <li>
+                       <a href="linsoft.html">Linux</a>
+                    </li>
+                    <li>
+                       <a href="mobisoft.html">Mobile</a>
+                    </li>
+                 </ul>
+                 <a href="calc.html">Tools/Formulas</a>   
+              </li>
+              
+           </ul>
+        </nav>
+        <!--SIDEBAR ENDS HERE--> 
+      <!-- ---------------Page Content--------------- -->
+      <div id="content">
+         <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+               <button type="button" id="sidebarCollapse" class="btn btn-light">
+               <i class="fas fa-align-left"></i>
+               <span>Menu</span>
+               </button>
+            </div>
+         </nav>
+         <div id="telescope-box" class="row justify-content-center mb-2">
+            
+            <div style="width:60%; text-align: center;">
+               <h1 class="row centered-text">Formulas and Calculators</h1>
+            </div>
+            <div class="wrapper flex-column"></div>
+                <div class="mt-5 col-6 justify-content-center">
+                    <h3>
+                        Calculate Magnification Factor for Observing
+                    </h3>
+                    <p>
+                        Although it is not neccessary to know what magnification factor you are viewing the heavens with,
+                        it can often be handy in calculating other things, such as maximum magnification, or just for general
+                        knowledge. Below is a formula on how to calculate it, as well as a handy calculator tool if you're feeling
+                        lazy or are in a hurry. Or perhaps, like me, you could do with less math in your life.
+                    </p>
+                    <br>
+                    <h4 style="text-decoration: none;">
+                        Telescope focal length / Eyepiece focal length = Magnification Factor
+                    </h4>
+                    <br>
+                    <br>
+                    <h6>
+                        If using a Barlow Lens or Focal Extender, add that X factor to the end result of the 
+                        previous calculation or multiply the original focal length of the telescope beforehand. 
+                        Both result in the same number.
+                    </h6>
+                    <p class="small"><i>
+                        Example: 1500mm focal length telescope / 25mm eyepiece = 60X x Barlow Mag. Factor (if used directly below the eyepice) of 2x = 120x
+                    </i></p>
+
+                    <div id="calcMagSection" class="calc-1-wrapper white-text">
+                        <input type="text" id="calcMagFL" name="calcMagFL field" placeholder="Telescope Focal Length"><span>mm</span>
+                        <br>
+                        <input type="text" id="calcMagEPFL" name="calcMagEPFL field" placeholder="Eyepiece Focal Length"><span>mm</span>
+                        <br>
+                        <select id="barlowMagFactorValue">
+                            <option value="1">None</option>
+                            <option value="2">2X</option>
+                            <option value="2.5">2.5X</option>
+                            <option value="3">3X</option>
+                            <option value="5">5X</option>
+                        </select><span>     Select Barlow/Focal Extender</span>
+                        <br>
+                        <br>
+                        <input type="button" name="clickbtn" value="Calculate" class="btn-info" onclick="calcMag()">
+                        <br>
+                        <br>
+                        <input type="text" id="magCalcResultBox" name="magCalcResult Field"><span>X total magnification</span>
+                        
+                    </div>
+                    <div>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                    <div class="mt-5 col-6 justify-content-center">
+                    <h3>
+                        Effective Maximum Magnification for Observing
+                    </h3>
+                    <p>
+                        Although actual maximum magnification can sometimes be higher, what we'll concern ourselves with
+                        on this section is maximum "effective" magnification. Anything higher is inviting frustration
+                        in my opinion. Despite what your telescope and eyepieces may be capable of, the atmospheric 
+                        conditions of the sky most often limit this to no more than 250-300x. To calculate the 
+                        maximum magnification factor of your telescope and currently used eyepiece, use the formula below
+                        as a rule of thumb. 
+                    </p>
+                    
+                    
+                        <h4>
+                            Aperture of Telescope in inches X 50 = Maximum Effective Magnification
+                        </h4>
+                        <p>
+                            Example: 5 inch telescope X 50 = 250X max effective magnification
+                        </p>
+                    
+                        <h4>
+                            Aperture of Telescope in millimeters X 2 = Maximum Effective Magnification
+                        </h4>
+                        <p>
+                            Example: 127mm telescope X 2 = 252X max effective magnification
+                        </p>
+                        <p>
+                            Use this information with the calculator above to determine how far you
+                            should expect to be able to push your observation magnification, generally
+                            speaking.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="mt-5 col-6 justify-content-center">
+                        <h3>
+                            Pixel Ratio - Sampling
+                        </h3>
+                        <p>
+                            Pixel Ratio is all about matching the ratio of the pixels of your camera to the resolution
+                            of your optical train. Pixel Ratios below a certain threshold are considered to be "undersampled"
+                            while pixel ratios above that threshold are considered to be "oversampled." One of these is a much
+                            bigger problem than the other and should be avoided- 
+                        </p>
+                        </div>
+                
+            </div>
+            
+            <div id="back"></div>
+         </div>
+      </div>
+        
+      <!--JAVASCRIPT/JQUERY STARTS HERE-->   
+      <script src="calc.js"></script>
+      <div class="overlay"></div>
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      <!-- jQuery Custom Scroller CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+             $("#sidebar").mCustomScrollbar({
+                 theme: "minimal"
+             });
+         
+             $('#dismiss, .overlay').on('click', function () {
+                 $('#sidebar').removeClass('active');
+                 $('.overlay').removeClass('active');
+             });
+         
+             $('#sidebarCollapse').on('click', function () {
+                 $('#sidebar').addClass('active');
+                 $('.overlay').addClass('active');
+                 $('.collapse.in').toggleClass('in');
+                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+             });
+         });
+      </script>
+      <!--JAVASCRIPT/JQUERY ENDS HERE-->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>   -->
+   </body>
+</html>

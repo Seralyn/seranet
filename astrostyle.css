@@ -133,6 +133,26 @@ h3 {
   color: white;
 }
 
+.white-text {
+  color: white;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: rgb(150, 150, 150);
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: rgb(150, 150, 150);
+}
+
+::placeholder {
+  color: rgb(150, 150, 150);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
 #starbox-1 {
   width: 70%;
 }
@@ -450,6 +470,10 @@ h5 {
   color: white;
   font-style: italic;
 }
+
+h6 {
+  color: white;
+}
 /* ^^^^^^^^^^^^^^^^CONTENT STOPs HERE^^^^^^^^^^^^^^^^ */
 
 /* ****************SIDE BAR STARTS HERE***************** */
@@ -688,6 +712,28 @@ dd {
   color: #fff !important;
 }
 
+.btn-info {
+  background-color: #0077B6 !important;
+  border: 0 !important;
+  color: #CAF0F8 !important;
+  border-radius: 4px !important;
+}
+
+#calcMagFL {
+  border-radius: 7px;
+}
+
+#calcMagEPFL {
+  border-radius: 7px;
+}
+
+#barlowMagFactorValue {
+  border-radius: 7px;
+}
+
+#magCalcResultBox {
+  border-radius: 7px;
+}
 /* .fas {
   background: greenyellow !important;
   border-color: pink !important;
