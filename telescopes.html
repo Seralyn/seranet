@@ -1,212 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Learn About Telescopes</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
-      <link rel="stylesheet" href="astrostyle.css" type="text/css" media="screen"/>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&display=swap">
-      <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-      <!-- Font Awesome JS -->
-      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-   </head>
-   <header>
-      
-   </header>
-   <body>
-      <!-- ---------------SIDEBAR STARTS HERE--------------- -->
-      <div class="wrapper">
-         <!-- Sidebar -->
-         <nav id="sidebar">
-            <div id="dismiss">
-               <i class="fas fa-arrow-left"></i>
-            </div>
-            <div class="sidebar-header">
-               <h3>Menu</h3>
-            </div>
-            <ul class="list-unstyled components">
-               <p>Categories</p>
-               <li class="active">
-                  <a href="home.html">Home</a>
-                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Solar System</a>
-                  <ul class="collapse list-unstyled" id="homeSubmenu">
-                     <li>
-                        <a href="#">Lunar</a>
-                     </li>
-                     <li>
-                        <a href="#">Solar</a>
-                     </li>
-                     <li>
-                        <a href="#">Planetary</a>
-                     </li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="#">About</a>
-                  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Deep Space</a>
-                  <ul class="collapse list-unstyled" id="pageSubmenu">
-                     <li>
-                        <a href="#">Emission Nebulae</a>
-                     </li>
-                     <li>
-                        <a href="#">Reflection Nebulae</a>
-                     </li>
-                     <li>
-                        <a href="#">Galaxies</a>
-                     </li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="telescopes.html">Telescopes</a>
-               </li>
-               <li>
-                  <a href="#">Observing</a>
-               </li>
-               <li>
-                  <a href="references.html">Links/References</a>
-               </li>
-               <li>
-                  <a href="software.html">Software</a>
-               </li>
-            </ul>
-         </nav>
-    <!-- ---------------Page Content--------------- -->
-         <div id="content">
-           
-            <nav class="navbar navbar-expand-lg">
-               <div class="container-fluid">
-                  <button type="button" id="sidebarCollapse" class="btn btn-light">
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <title>Learn About Telescopes</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+   <link rel="stylesheet" href="astrostyle.css" type="text/css" media="screen" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+   <!-- Font Awesome JS -->
+   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"></script>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"></script>
+</head>
+<header></header>
+
+<body>
+   <!-- ---------------SIDEBAR STARTS HERE--------------- -->
+   <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+         <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+         </div>
+         <div class="sidebar-header">
+            <h3>Menu</h3>
+         </div>
+         <ul class="list-unstyled components">
+            <p id="categories">Categories</p>
+            <li>
+               <a href="home.html">Home</a>
+               <a href="#">About</a>
+               <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Solar System</a>
+               <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li>
+                     <a href="#">Lunar</a>
+                  </li>
+                  <li>
+                     <a href="#">Solar</a>
+                  </li>
+                  <li>
+                     <a href="#">Planetary</a>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               
+               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Deep Space</a>
+               <ul class="collapse list-unstyled" id="pageSubmenu">
+                  <li>
+                     <a href="#">Emission Nebulae</a>
+                  </li>
+                  <li>
+                     <a href="#">Reflection Nebulae</a>
+                  </li>
+                  <li>
+                     <a href="#">Galaxies</a>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <a href="telescopes.html">Telescopes</a>
+            </li>
+            <li>
+               <a href="#">Observing</a>
+            </li>
+            <li>
+               <a href="references.html">Links/References</a>
+            </li>
+            <li>
+               <a href="software.html">Software</a>
+            </li>
+         </ul>
+      </nav>
+      <!--SIDEBAR ENDS HERE--> 
+      <!-- ---------------Page Content--------------- -->
+      <div id="content">
+         <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+               <button type="button" id="sidebarCollapse" class="btn btn-light">
                   <i class="fas fa-align-left"></i>
                   <span>Menu</span>
-                  </button>
-               </div>
-            </nav>
-            <div id="telescope-box" class="row justify-content-center mb-2">
-                        <!--<div id="starbox-1">
+               </button>
+            </div>
+         </nav>
+         <div id="telescope-box" class="row justify-content-center mb-2">
+            <!--<div id="starbox-1">
                   <div class="stars" id="star-1"></div>
                   <div class="stars" id="star-2"></div>
                   <div class="stars" id="star-3"></div>
                   </div>-->
-                <h1 class="centered-text row" mb-5>Types of Telescopes</h1>
-                <br>
-                <br>
-                <br>
-                <div id="back"></div>
-               <div class="reflector_img__wrap col-lg-3">
-                  <img src="reflector.jpg" alt="Newtonian Reflector Telescope" style="width:240px; height:200px";>
-                  <div class="reflector_img__description">
-                     <p class="reflector_img__description_text">
-                        Reflector  
-                     </p>
-                  </div>
+            <div class="centered-text row" mb-5 style="height: 150px;">
+               <h1>Types of Telescopes</h1>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div id="back"></div>
+            <div class="reflector_img__wrap col-lg-3">
+               <img src="reflector.jpg" alt="Newtonian Reflector Telescope" style="width: 240px; height: 200px" ; />
+               <div class="reflector_img__description">
+                  <p class="reflector_img__description_text">Reflector</p>
                </div>
-               <div class="refractor_img__wrap col-lg-3 offset-1">
-                  <img src="refractor.jpg" alt="Refractor Telescope" style="width:346px;height:200px";>
-                  <div class="refractor_img__description">
-                     <p class="refractor_img__description_text">
-                        Refractor  
-                     </p>
-                  </div>
+            </div>
+            <div class="refractor_img__wrap col-lg-3 offset-1">
+               <img src="refractor.jpg" alt="Refractor Telescope" style="width: 346px; height: 200px" ; />
+               <div class="refractor_img__description">
+                  <p class="refractor_img__description_text">Refractor</p>
                </div>
-               <div class="catadioptric_img__wrap col-lg-3 offset-1">
-                  <img src="catadioptric.jpg" alt="Catadioptric Telescope" style="width:300px;height:200px";>
-                  <div class="catadioptric_img__description">
-                     <p class="catadioptric_img__description_text">
-                        Catadioptric  
-                     </p>
-                  </div>
+            </div>
+            <div class="catadioptric_img__wrap col-lg-3 offset-1">
+               <img src="catadioptric.jpg" alt="Catadioptric Telescope" style="width: 300px; height: 200px" ; />
+               <div class="catadioptric_img__description">
+                  <p class="catadioptric_img__description_text">Catadioptric</p>
                </div>
-               <br>
-               <br>
-               <br>
-               <br>
-               <br>
-               <br>
-               <br>
-               <div class="reflector-text-box fade-in-text ">
-                  <div class="col mt-5">
-                     This is example text that should show up when hovering over an image of the reflector telescope.
-                     In a reflector, light enters the telescope at the end opposite the primary mirror. The mirror is a 
-                     concave mirror. Similar to a convex lens, a concave mirror converges the light at the secondary 
-                     mirror. The rays of light converge at the focal point. At this point they again begin to diverge. 
-                     The convex lens in the eyepiece takes the converging light and straightens it back out. As with the 
-                     refractor, the image is still upside down. It appears as a virtual image beyond the telescope in 
-                     the direction the person is looking. 
-                  </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="reflector-text-box fade-in-text">
+               <div class="col mt-5">
+                  This is example text that should show up when hovering over an
+                  image of the reflector telescope. In a reflector, light enters the
+                  telescope at the end opposite the primary mirror. The mirror is a
+                  concave mirror. Similar to a convex lens, a concave mirror
+                  converges the light at the secondary mirror. The rays of light
+                  converge at the focal point. At this point they again begin to
+                  diverge. The convex lens in the eyepiece takes the converging
+                  light and straightens it back out. As with the refractor, the
+                  image is still upside down. It appears as a virtual image beyond
+                  the telescope in the direction the person is looking.
                </div>
-               <div class="refractor-text-box fade-in-text">
-                  <div class="col mt-5">
-                     This is example text that should show up when hovering over an image of the reflector telescope.
-                     Refracting telescopes work by using two lenses to focus the light and make it look like the object 
-                     is closer to you than it really is. Both lenses are in a shape that’s called 'convex'. Convex 
-                     lenses work by bending light inwards (like in the diagram). This is what makes the image look 
-                     smaller. 
-                  </div>
+            </div>
+            <div class="refractor-text-box fade-in-text">
+               <div class="col mt-5">
+                  This is example text that should show up when hovering over an
+                  image of the reflector telescope. Refracting telescopes work by
+                  using two lenses to focus the light and make it look like the
+                  object is closer to you than it really is. Both lenses are in a
+                  shape that’s called 'convex'. Convex lenses work by bending light
+                  inwards (like in the diagram). This is what makes the image look
+                  smaller.
                </div>
-               <div class="catadioptric-text-box fade-in-text">
-                  <div class="col mt-5">
-                     This is example text that should show up when hovering over an image of the reflector telescope.
-                     Well, whilst a reflector telescope uses mirrors and a refractor telescope uses lenses, a catadioptric 
-                     telescope actually uses both. When the light comes through the telescope, it first passes through a 
-                     collective lens. This lens is there to correct the image and helps to reduce any kind of aberration 
-                     that may occur and distort the final image from reaching your eyes. The light then passes through to 
-                     the primary mirrors, which are curved. This reflection is then cast onto the secondary mirror, which 
-                     then comes through to the eyepiece.
+            </div>
+            <div class="catadioptric-text-box fade-in-text">
+               <div class="col mt-5">
+                  This is example text that should show up when hovering over an
+                  image of the reflector telescope. Well, whilst a reflector
+                  telescope uses mirrors and a refractor telescope uses lenses, a
+                  catadioptric telescope actually uses both. When the light comes
+                  through the telescope, it first passes through a collective lens.
+                  This lens is there to correct the image and helps to reduce any
+                  kind of aberration that may occur and distort the final image from
+                  reaching your eyes. The light then passes through to the primary
+                  mirrors, which are curved. This reflection is then cast onto the
+                  secondary mirror, which then comes through to the eyepiece.
+               </div>
+               <br />
+               <br />
+               <br />
+               <br />
+               <br />
+               <br />
+               <br />
+            </div>
+            <div class="centered-text" style="margin-top: 250px;">
+               <h4>Dive Deeper</h4>
+               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                  class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                  <path
+                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+               </svg>
+               <div>
+                  <div class="centered-text" style="color: white; margin-top: 100px; margin-bottom: 50px;">
+                     <hr>
+                     <h2 style="margin-top: 100px;">Reflector</h2>
+                     <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="876px" height="396px" viewBox="-251 -81 292 132" version="1.1">
+                           <title>Newtonian telescope</title>
+                           <desc>Diagram of the lightpath through a Newtonian telescope.</desc>
+                           <g style="stroke:#000;stroke-width:.7;fill:none">
+                               <path d="M-230,-45 h30 v-20 M-170,-65 v20 H30 v90 H-230" stroke-width="1" /> <!-- scope body -->
+                               <path d="M25,-40 V40 h-20 a9,40 0 0,0 0,-80 z" fill="cyan" />  <!-- primary mirror -->
+                               <path d="M-200,-2 h30 v4 h-30 z" fill="cyan" transform="rotate(45,-185,0)" /> <!-- secondary mirror -->
+                               <path d="M-243.535,-3.535 l7.07,7.07 M-243.535,3.535 l7.07,-7.07" stroke="gray" />  <!-- gray focus -->
+                               <path d="M5.5,-40 a9,40 0 0,1 0,80 M-194.19,-12.02 L-172.98,9.19
+                                   M-195,-75 h20 v-5 v10 v-5 h-20 v5 v-10
+                                   M-188.535,-78.535 l7.07,7.07 M-188.535,-71.465 l7.07,-7.07" 
+                                   stroke="#F00" stroke-width="1" /> <!-- red part of lens, eyepiece, cross --> 
+                               <g stroke="#7F00FF">    <!-- purple color -->
+                                   <path d="M-250,-35 h260 L-190,-7 L-185,-75
+                                       M-250,35 h260 L-173,9.38 L-185,-75" /> <!-- purple rays: top, bottom -->
+                                   <path d="M-215,-37.5 l4.33,2.5 l-4.33,2.5 M-215,37.5 l4.33,-2.5 l-4.33,-2.5" /> <!-- arrow marks -->
+                               </g>
+                               <path d="M-190,-7 L-240,0 M-174,9.24 L-240,0" stroke="#AAA" />  <!-- extended rays -->
+                               <path d="M-250,-30 l260,-5 L-192,-9 L-195,-75 
+                                   M-250,40 l260,-5 L-175,7.38 L-195,-75" stroke="#00A700" />  <!-- green rays -->
+                               <path d="M35,0 H-185 v-75" stroke-dasharray="10,2,5,2" /> <!-- scope axis -->
+                               <path d="M-185,0 H-240" stroke="gray" stroke-dasharray="10,2,5,2" /> <!-- axis extended -->
+                           </g>
+                           </svg>
+                           <p><i>Light path inside of a Newtonian Reflector Telescope.</i></p>
+                           <p style="font-size: smaller;"><i>Image taken from <a id="body-link" href="https://commons.wikimedia.org/wiki/File:Gregorian_telescope.svg">Wikipedia Commons</a></i></p>
+                     </div>
+                     <div class="centered-text white-text-wide mt-5">
+                        <p>
+                           A reflecting telescope (also called a reflector) is a telescope that uses a single or a
+                           combination of curved mirrors that reflect light and form an image. The reflecting telescope
+                           was invented in the 17th century by Isaac Newton as an alternative to the refracting
+                           telescope which, at that time, was a design that suffered from severe chromatic aberration.
+                           Although reflecting telescopes produce other types of optical aberrations, it is a design
+                           that allows for very large diameter objectives. Almost all of the major telescopes used in
+                           astronomy research are reflectors. Reflecting telescopes come in many design variations and
+                           may employ extra optical elements to improve image quality or place the image in a
+                           mechanically advantageous position. Since reflecting telescopes use mirrors, the design is
+                           sometimes referred to as a catoptric telescope.</p>
+
+                           <p>From the time of Newton to the 1800s, the mirror itself was made of metal – usually speculum
+                           metal. This type included Newton's first designs and even the largest telescopes of the 19th
+                           century, the Leviathan of Parsonstown with a 1.8 meter wide metal mirror. In the 19th century
+                           a new method using a block of glass coated with very thin layer of silver began to become
+                           more popular by the turn of the century. A major turning point in reflecting telescopes was
+                           the Paris Observatory 1.2 m of 1878, A.A. Common telescopes which led to the Crossley and
+                           Harvard reflecting telescopes, which helped establish a better reputation for reflecting
+                           telescopes as the metal mirror designs were noted for their drawbacks. Chiefly the metal
+                           mirrors only reflected about 2⁄3 of the light and the metal would tarnish. After multiple
+                           polishings and tarnishings, the mirror could lose its precise figuring needed.</p>
+
+                           <p>Reflecting telescopes became extraordinarily popular for astronomy and many famous
+                           telescopes, such as the Hubble Space Telescope, and popular amateur models use this design.
+                           In addition, the reflection telescope principle was applied to other electromagnetic
+                           wavelengths, and for example, X-ray telescopes also use the reflection principle to make
+                           image-forming optics.
+                        </p>
+                     </div>
+                     <hr>
+                     <div id="refractor-deep-info-wrapper" class="centered-text" style="color: white; margin-top: 100px; margin-bottom: 50px;">
+                     <h2>Refractor</h2>
+                     </div>
+                     <div class="centered-text white-text-wide">
+                        <p>A refracting telescope (also called a refractor) is a type of optical telescope that uses a lens as its objective to form an image (also referred to a dioptric telescope). The refracting telescope design was originally used in spy glasses and astronomical telescopes but is also used for long-focus camera lenses. Although large refracting telescopes were very popular in the second half of the 19th century, for most research purposes, the refracting telescope has been superseded by the reflecting telescope, which allows larger apertures. A refractor's magnification is calculated by dividing the focal length of the objective lens by that of the eyepiece.</p>
+
+                        <p>Refracting telescopes typically have a lens at the front, then a long tube, then an eyepiece or instrumentation at the rear, where the telescope view comes to focus. Originally, telescopes had an objective of one element, but a century later, two and even three element lenses were made.</p>
+                           
+                        <p>Refracting telescope is a technology that has often been applied to other optical devices, such as binoculars and zoom lenses/telephoto lens/long-focus lens.</p>
+                        <hr>
+                        <div id="catadioptric-deep-info-wrapper" class="centered-text" style="color: white; margin-top: 100px; margin-bottom: 50px;">
+                           <h2>Catadioptric</h2>
+                           </div>
+                           <div class="centered-text white-text-wide">
+                              <p>A catadioptric optical system is one where refraction and reflection are combined in an optical system, usually via lenses (dioptrics) and curved mirrors (catoptrics). Catadioptric combinations are used in focusing systems such as searchlights, headlamps, early lighthouse focusing systems, optical telescopes, microscopes, and telephoto lenses. Other optical systems that use lenses and mirrors are also referred to as "catadioptric", such as surveillance catadioptric sensors.</p>
+      
+                              <p>Schmidt–Cassegrain telescopes are one of the most popular commercial designs on the amateur astronomical market, having been mass-produced since the 1960s. The design replaces the Schmidt Camera film holder with a Cassegrain secondary mirror, making a folded optical path with a long focal length and a narrow field of view.</p>
+                                 
+                              <p>Maksutov–Cassegrain telescopes are the most commonly seen design that uses a meniscus corrector, a variant of the Maksutov telescope. It has a silvered "spot" secondary on the corrector, making a long focal length but compact (folded optical path) telescope with a narrow field of view. This design idea appeared in Dmitri Maksutov's 1941 notes and was originally developed in commercial designs by Lawrence Braymer (Questar, 1954), and John Gregory (1955 patent). The combination of the corrector with the silvered secondary spot makes Maksutov–Cassegrains low-maintenance and ruggedized since they can be air-sealed and fixed in alignment (collimation).</p>
+                              <hr>
                   </div>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
                </div>
             </div>
          </div>
       </div>
-      <!--SIDEBAR ENDS HERE-->   
-      
+   </div>
 
 
-      <!--JAVASCRIPT/JQUERY STARTS HERE-->   
-      <div class="overlay"></div>
-      <!-- jQuery CDN - Slim version (=without AJAX) -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <!-- Popper.JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-      <!-- Bootstrap JS -->
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-      <!-- jQuery Custom Scroller CDN -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script type="text/javascript">
-         $(document).ready(function () {
-             $("#sidebar").mCustomScrollbar({
-                 theme: "minimal"
-             });
-         
-             $('#dismiss, .overlay').on('click', function () {
-                 $('#sidebar').removeClass('active');
-                 $('.overlay').removeClass('active');
-             });
-         
-             $('#sidebarCollapse').on('click', function () {
-                 $('#sidebar').addClass('active');
-                 $('.overlay').addClass('active');
-                 $('.collapse.in').toggleClass('in');
-                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-             });
+   <!--SIDEBAR ENDS HERE-->
+
+   <!--JAVASCRIPT/JQUERY STARTS HERE-->
+   <div class="overlay"></div>
+   <!-- jQuery CDN - Slim version (=without AJAX) -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+   <!-- Popper.JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"></script>
+   <!-- Bootstrap JS -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"></script>
+   <!-- jQuery Custom Scroller CDN -->
+   <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script type="text/javascript">
+      $(document).ready(function () {
+         $("#sidebar").mCustomScrollbar({
+            theme: "minimal",
          });
-      </script>
-      <!--JAVASCRIPT/JQUERY ENDS HERE-->
 
+         $("#dismiss, .overlay").on("click", function () {
+            $("#sidebar").removeClass("active");
+            $(".overlay").removeClass("active");
+         });
 
-      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>   -->
-   </body>
+         $("#sidebarCollapse").on("click", function () {
+            $("#sidebar").addClass("active");
+            $(".overlay").addClass("active");
+            $(".collapse.in").toggleClass("in");
+            $("a[aria-expanded=true]").attr("aria-expanded", "false");
+         });
+      });
+   </script>
+   <!--JAVASCRIPT/JQUERY ENDS HERE-->
+
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>   -->
+</body>
+
 </html>
