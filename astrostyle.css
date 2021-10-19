@@ -21,27 +21,6 @@ a:focus {
   transition: all 0.3s;
 }
 
-/* body {
-  margin: 0;
-  padding: 0;
-  color: white;
-  background: url('MWBG-JT.jpg') repeat;
-  background-size: cover;
-  z-index: -2;
-}
-
-body:before {
-  content: " ";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  background: -webkit-linear-gradient(to bottom, rgba(2, 62, 138, 0.8) 100%);
-  
-} */
-
 body {
   /* position: fixed; */
   padding: 0;
@@ -110,6 +89,123 @@ h3 {
 input:focus::placeholder {
   color: transparent;
 }
+
+/* -----------------------------------------------
+---- CONTENT STYLE ----------------------------------------------------- */
+#content {
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 95px;
+  z-index: -1;
+}
+
+p {
+  color: white;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+li {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+  font-style: italic;
+}
+
+h5 {
+  color: white;
+  font-style: italic;
+}
+
+h6 {
+  color: white;
+}
+/* ^^^^^^^^^^^^^^^^CONTENT STOPs HERE^^^^^^^^^^^^^^^^ */
+/* ****************MENU BAR****************  */
+
+.navbar {
+  padding: 15px 10px;
+  background: rgba(0, 41, 96, 0.95);
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+} 
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+.btn-light {
+  background-color: #03045e !important;
+  border: 0 !important;
+  color: #fff !important;
+}
+
+.btn-info {
+  background-color: #0077B6 !important;
+  border: 0 !important;
+  color: #CAF0F8 !important;
+  border-radius: 4px !important;
+}
+
+#calcMagFL {
+  border-radius: 7px;
+}
+
+#calcMagEPFL {
+  border-radius: 7px;
+}
+
+#barlowMagFactorValue {
+  border-radius: 7px;
+}
+
+#magCalcResultBox {
+  border-radius: 7px;
+}
+
+#softbox {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  
+}
+
+.menu-bar-btns {
+  background: rgba(0, 0, 0, 0.23);
+  border-radius: 14px;
+  padding-left: 3px;
+  text-align: center;
+  width: 400px;
+}
+
+/* ^^^^^^^^^^^^^^^^MENU BAR STOPS HERE^^^^^^^^^^^^^^^^ */
 
 /* ****************TEXT FADE IN STARTS HERE***************** */
 .fade-in-text {
@@ -373,49 +469,7 @@ input:focus::placeholder {
 }
 /* ^^^^^^^^^^^^^^^^HIDDEN TEXT BOXES STOP HERE^^^^^^^^^^^^^^^^ */
 
-/* -----------------------------------------------
----- CONTENT STYLE ----------------------------------------------------- */
-#content {
-  width: 100%;
-  padding: 20px;
-  min-height: 100vh;
-  transition: all 0.3s;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 
-p {
-  color: white;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-li {
-  color: white;
-}
-
-h3 {
-  color: white;
-}
-
-h4 {
-  color: white;
-  font-style: italic;
-}
-
-h5 {
-  color: white;
-  font-style: italic;
-}
-
-h6 {
-  color: white;
-}
-/* ^^^^^^^^^^^^^^^^CONTENT STOPs HERE^^^^^^^^^^^^^^^^ */
 
 /* ****************SIDE BAR STARTS HERE***************** */
 .wrapper {
@@ -625,70 +679,7 @@ dd {
   opacity: 1;
 }
 /* ********TOOLTIP END******* */
-.navbar {
-  padding: 15px 10px;
-  /* background: #fff; */
-  border: none;
-  border-radius: 0;
-  margin-bottom: 40px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
 
-.navbar-btn {
-  box-shadow: none;
-  outline: none !important;
-  border: none;
-}
-
-.line {
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px dashed #ddd;
-  margin: 40px 0;
-}
-
-.btn-light {
-  background-color: #03045e !important;
-  border: 0 !important;
-  color: #fff !important;
-}
-
-.btn-info {
-  background-color: #0077B6 !important;
-  border: 0 !important;
-  color: #CAF0F8 !important;
-  border-radius: 4px !important;
-}
-
-#calcMagFL {
-  border-radius: 7px;
-}
-
-#calcMagEPFL {
-  border-radius: 7px;
-}
-
-#barlowMagFactorValue {
-  border-radius: 7px;
-}
-
-#magCalcResultBox {
-  border-radius: 7px;
-}
-
-#softbox {
-  background-color: rgba(0, 0, 0, .2);
-  border-radius: 10px;
-  
-}
-
-.menu-bar-btns {
-  background: rgba(0, 0, 0, 0.23);
-  border-radius: 14px;
-  padding-left: 3px;
-  text-align: center;
-  width: 400px;
-}
 /* .fas {
   background: greenyellow !important;
   border-color: pink !important;
