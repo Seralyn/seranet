@@ -288,6 +288,7 @@ h6 {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s, visibility 0.2s;
+  
 }
 
 .reflector_img__description_text {
@@ -295,6 +296,7 @@ h6 {
   font-size: 25px;
   visibility: hidden;
   font-family: "Cabin", sans-serif;
+  
 }
 
 .reflector_img__wrap:hover .reflector_img__description {
