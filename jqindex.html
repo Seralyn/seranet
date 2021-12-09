@@ -45,6 +45,7 @@
     
     <div class="greenCircle"></div>
     <div><img id="mini" src="minicat.jpeg"></div>
+    <div id="emptyDiv"></div>
     <!-- <div class="redSquare"></div>
     <div style="height:70px;">
         <p id="text">This is some text</p>
@@ -86,7 +87,16 @@
     })
 
     $("#mini").click(function(){
-        $(this).animate({width:"400px", height:"480px"}, 3000);
+        $(this).animate({
+            width:"400px", 
+            height:"480px"
+            }, 3000);
+    })
+
+    $.ajax({
+        url:"about.html"
+    }).done(function(data){
+        $("#emptyDiv").html(data); 
     })
     </script>
 </body>
