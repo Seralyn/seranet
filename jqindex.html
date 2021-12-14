@@ -94,7 +94,11 @@
     })
 
     $.ajax({
-        url:"about.html"
+        url:"about.html",
+        type:'GET',
+        success: function(data){
+            $("h1").html($(data).find("h1").html());
+        }
     }).done(function(data){
         $("#emptyDiv").html(data); 
     })

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    
+    <title>Form</title>
+
+    <style>
+        body {
+            background-color: rgb(232, 232, 232);
+            margin: 0px;
+            padding: 0px;
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+            font-weight: 300;
+        }
+
+        /* #topBarWrapper {
+            background-color: rgb(199, 199, 199);
+            color: black;
+            height: 50px;
+            border-style: solid;
+            border-width: 1px;
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right: -10px;
+            
+        } */
+
+        .topBarWrapper {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            justify-content: space-between;
+            justify-items: stretch;
+            align-items: center;
+            align-content: stretch;
+            grid-template-areas:
+                "titleText langResultWrapper runButtonWrapper";
+            height: 50px;
+            border-style: solid;
+            border-width: 1px;
+            border-top: none;
+            background-color: rgb(34, 40, 55);
+            color: rgb(155, 182, 255);
+            /* margin-top: -10px;
+            margin-left: -10px;
+            margin-right: -10px; */
+            }
+
+        .langResultWrapper { 
+            grid-area: langResultWrapper;
+                
+                
+        }
+
+        .runButtonWrapper { 
+            grid-area: runButtonWrapper;
+            padding-right: 20px; 
+        }
+
+
+        .titleText {
+            grid-area: titleText;
+            padding-top: 1%;
+            padding-left: 6px;
+            
+        }
+
+        #langResultWrapper {
+            margin-top: -20px;
+            margin-right: 45%;
+            
+        }
+
+        #htmlButton {
+            margin-right: -6px;
+            border-bottom-left-radius: 6px;
+            border-top-left-radius: 6px;
+            border-bottom: none;
+            height: 30px;
+            border-color: rgb(245, 204, 67);
+            border-top: none;
+            
+        }
+
+        #cssButton {
+            margin-right: -6px;
+            border-radius: 0px;
+            height: 30px;
+            border-color: rgb(245, 204, 67);
+            border-bottom: none;
+            border-top: none;
+        }
+
+        #jsButton {
+            margin-right: -6px;
+            border-radius: 0px;
+            height: 30px;
+            border-color: rgb(245, 204, 67);
+            border-bottom: none;
+            border-top: none;
+        }
+
+        #resultButton {
+            border-bottom-right-radius: 6px;
+            border-top-right-radius: 6px;
+            height: 30px;
+            border-color: rgb(245, 204, 67);
+            border-bottom: none;
+            border-top: none;
+        }
+
+        #runButton {
+            border-radius: 5px;
+            height: 30px;
+            background-color: rgb(68, 211, 132);
+            margin-right: 24px;
+            font-size:100%;
+        }
+
+        .editorContainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            justify-items: stretch;
+            height: 100%;
+            background-color: rgb(48, 56, 77);
+            color:rgb(163, 189, 255);
+            grid-template-areas:
+                "html-Editor css-Editor js-Editor result-Editor";
+            }
+
+        #html-Editor { 
+            
+            border-right: 1px solid;
+            padding-left: 10px;
+            padding-top: 10px;
+            display: block;
+            position:relative;
+            /* padding-bottom: 200%; */
+            
+        }
+
+        #css-Editor { 
+            
+            border-right: 1px solid;
+            padding-left: 10px;
+            padding-top: 10px;
+            display: block;
+            position:relative;
+            /* padding-bottom: 200%; */
+        }
+
+        #js-Editor { 
+            
+            border-right: 1px solid; 
+            padding-left: 10px;
+            padding-top: 10px;
+            display: block;
+            position:relative;
+            /* padding-bottom: 200%; */
+        }
+
+        #result-Editor {
+
+            
+            border-right: 1px solid; 
+            padding-left: 10px;
+            padding-top: 10px;
+            margin-right: -8px;
+            display: block;
+            position:relative;
+            /* padding-bottom: 200%; */
+        }
+
+        .typeLabelBox {
+            margin-top:5px;
+            margin-left: 44ex;
+            position:absolute;
+            border: 1px solid; 
+            border-radius: 4px;
+            padding: 3px;
+            
+        }
+
+        .langButton {
+            background-color: rgb(245, 204, 67);
+        }
+
+        p {
+            color:lightgreen;
+        }
+
+        input[type="text"], textarea {
+        height:100%;
+        width:100%;
+        margin: 0;
+        padding-left: -8px;
+        padding-top:40px;
+        margin-left: -7px;
+        background-color : rgb(48, 56, 77);
+        color: lightgreen;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-weight: 300;
+        font-size: 105%;
+        border: none;
+        overflow: auto;
+        outline: none;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+        resize: none; /*remove the resize handle on the bottom right*/
+
+        }
+
+        input[type="text"], textarea::placeholder {
+            color:lightgreen;
+            opacity: 60%;
+        }
+
+        iframe {
+            background-color: rgb(48, 56, 77);
+            height: 100%;
+            width: 100%;
+            /* margin-left:-9px;
+            margin-top:-9px; */
+            padding:0;
+        }
+    </style>
+
+    <body>
+
+        <!-- START TOP BAR HERE -->
+        <div>
+
+            <div class="topBarWrapper">
+                <div style="font-style: oblique; font-weight: bolder;" class="titleText">CodeRunner</div>
+
+                <div class="langResultWrapper">
+                    <button class="langButton" id="htmlButton" onclick="langButtonClicked()">HTML</button>
+                    <button class="langButton" id="cssButton" onclick="langButtonClicked()">CSS</button>
+                    <button class="langButton" id="jsButton" onclick="langButtonClicked()">JS</button>
+                    <button class="langButton" id="resultButton" onclick="langButtonClicked()">Result</button>
+                </div>
+
+                <div class="runButtonWrapper">
+                    <button id="runButton">Run</button>
+                </div>
+            </div>
+            
+            
+            <!-- Start Code Editors Here -->
+            <div class="editorContainer">
+                
+                <div id="html-Editor"><span class="typeLabelBox">HTML</span>
+                <textarea name="editHTML" id="htmlTextArea" cols="30" rows="10" placeholder="Type HTML here..."></textarea>
+                </div>
+            
+            
+                <div id="css-Editor"><span class="typeLabelBox">CSS</span>
+                    <textarea name="editHTML" id="cssTextArea" cols="30" rows="10" placeholder="Type CSS here..."></textarea>   
+                </div>
+        
+            
+                <div id="js-Editor"><span class="typeLabelBox">JavaScript</span>
+                    <textarea name="editHTML" id="jsTextArea" cols="30" rows="10" placeholder="Type Javascript here..."></textarea>
+                </div>
+        
+            
+                <div id="result-Editor"><span class="typeLabelBox">Result</span>
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                
+            </div>
+
+
+            
+        
+        
+
+        
+
+
+        <script>
+            var topBarHeight = $(".topBarWrapper").height();
+            var windowHeight = $(window).height();
+            var editorContainerHeight = windowHeight-topBarHeight;
+            $(".editorContainer").height(editorContainerHeight+"px");
+            
+            function langButtonClicked(id) {
+                var modifiedID = event.target.id.replace("Button", "-Editor");
+                var buttonColor = document.getElementById(event.target.id).style.backgroundColor;
+                console.log(buttonColor);
+                console.log(modifiedID);
+                if (buttonColor == "rgb(90, 90, 90)") {
+                    document.getElementById(event.target.id).style.backgroundColor = "rgb(245, 204, 67)";
+                    document.getElementById(modifiedID).style.display = "block";
+                    document.getElementById(event.target.id).style.borderColor = "rgb(245, 204, 67)";
+                } else {
+                    document.getElementById(event.target.id).style.backgroundColor = "rgb(90,90,90)";
+                    document.getElementById(modifiedID).style.display = "none";
+                    document.getElementById(event.target.id).style.borderColor = "rgb(90,90,90)";
+                }
+
+                };
+
+            // function showAndTell(){
+            //     var whatIsId = document.getElementById(event.target.id);
+            //     console.log(whatIsId);
+            //     let amIShown = whatIsId.replace("-Editor", "Button");
+            //     console.log(amIShown);
+            //     amIShown = document.getElementById(amIShown).style.display;
+            //     console.log(amIShown);
+
+            //     if (amIShown == "block") {
+            //         document.getElementById(event.target.id).style.display = "none";
+            //     } else {
+            //         document.getElementById(event.target.id).style.display = "block";
+            //     }
+
+            //     };
+                        
+        </script>
+    </body>
