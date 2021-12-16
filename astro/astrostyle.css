@@ -1,0 +1,690 @@
+html,
+body {
+  height: 100%;
+  margin: auto;
+  
+}
+
+a:visited {
+
+}
+
+a:active {
+
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+body {
+  /* position: fixed; */
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 62, 138);
+  
+}
+h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Cabin", sans-serif;
+}
+h3 {
+  text-align: justify;
+}
+.centered-text {
+  text-align: center;
+  /* padding-top: 105px; */
+}
+
+#categories {
+  font-size: 24px;
+}
+
+.p-home {
+  /* width: 60%; */
+  color: aliceblue;
+  padding-top: 3%;
+}
+
+.home-text-div {
+  width: 60%;
+  color: white;
+}
+
+.white-text-wide {
+  width: 95%;
+  color: white;
+}
+
+.white-text-wide a {
+  color: orange;
+  text-decoration: underline;
+}
+
+.white-text {
+  color: white;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: rgb(150, 150, 150);
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: rgb(150, 150, 150);
+}
+
+::placeholder {
+  color: rgb(150, 150, 150);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+/* -----------------------------------------------
+---- CONTENT STYLE ----------------------------------------------------- */
+#content {
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 95px;
+  z-index: -1;
+}
+
+p {
+  color: white;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+li {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+  font-style: italic;
+}
+
+h5 {
+  color: white;
+  font-style: italic;
+}
+
+h6 {
+  color: white;
+}
+/* ^^^^^^^^^^^^^^^^CONTENT STOPs HERE^^^^^^^^^^^^^^^^ */
+/* ****************MENU BAR****************  */
+
+.navbar {
+  padding: 15px 10px;
+  background: rgba(0, 41, 96, 0.95);
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+} 
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+.btn-light {
+  background-color: #03045e !important;
+  border: 0 !important;
+  color: #fff !important;
+}
+
+.btn-info {
+  background-color: #0077B6 !important;
+  border: 0 !important;
+  color: #CAF0F8 !important;
+  border-radius: 4px !important;
+}
+
+#calcMagFL {
+  border-radius: 7px;
+}
+
+#calcMagEPFL {
+  border-radius: 7px;
+}
+
+#barlowMagFactorValue {
+  border-radius: 7px;
+}
+
+#magCalcResultBox {
+  border-radius: 7px;
+}
+
+#softbox {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  
+}
+
+.menu-bar-btns {
+  background: rgba(0, 0, 0, 0.23);
+  border-radius: 14px;
+  padding-left: 3px;
+  text-align: center;
+  width: 400px;
+}
+
+/* ^^^^^^^^^^^^^^^^MENU BAR STOPS HERE^^^^^^^^^^^^^^^^ */
+
+/* ****************TEXT FADE IN STARTS HERE***************** */
+.fade-in-text {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ****************TEXT FADE IN STOPS HERE***************** */
+
+/* ****************REFLECTOR STARTS HERE***************** */
+.reflector_img__wrap {
+  position: relative;
+  height: 220px;
+  width: 260px;
+  border: 4px solid;
+  border-color: rgb(132, 121, 230);
+  background-color: white;
+  border-radius: 10%;
+  padding: 7px;
+  /* float: left;
+  margin-left: 23%;
+  */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.reflector_img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 9%;
+  background: rgba(29, 106, 154, 0.72);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+  
+}
+
+.reflector_img__description_text {
+  color: white;
+  font-size: 25px;
+  visibility: hidden;
+  font-family: "Cabin", sans-serif;
+  
+}
+
+.reflector_img__wrap:hover .reflector_img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.reflector_img__wrap:hover .reflector_img__description_text {
+  visibility: visible;
+  opacity: 1;
+  padding-left: 30%;
+  padding-top: 22%;
+  font-family: "Cabin", sans-serif;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.reflector_img__wrap:hover ~ .reflector-text-box {
+  display: block;
+  opacity: 1;
+}
+/* ****************REFLECTOR STOPS HERE***************** */
+
+/* ****************REFRACTOR STARTS HERE***************** */
+.refractor_img__wrap {
+  position: relative;
+  height: 225px;
+  width: 370px;
+  border: 4px solid;
+  border-color: rgb(132, 121, 230);
+  background-color: white;
+  border-radius: 10%;
+  padding: 7px;
+  /* float: left;
+  margin-left: 80px;
+  margin-right: 10px;
+  */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.refractor_img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 9%;
+  background: rgba(29, 106, 154, 0.72);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.refractor_img__description_text {
+  color: white;
+  font-size: 25px;
+  visibility: hidden;
+  font-family: "Cabin", sans-serif;
+}
+
+.refractor_img__wrap:hover .refractor_img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.refractor_img__wrap:hover .refractor_img__description_text {
+  visibility: visible;
+  opacity: 1;
+  padding-left: 30%;
+  padding-top: 22%;
+  font-family: "Cabin", sans-serif;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.refractor_img__wrap:hover ~ .refractor-text-box {
+  display: block;
+  opacity: 1;
+}
+
+/* ****************REFRACTOR STOPS HERE***************** */
+
+/* ****************CATADIOPTRIC STARTS HERE***************** */
+.catadioptric_img__wrap {
+  position: relative;
+  height: 225px;
+  width: 320px;
+  border: 4px solid;
+  border-color: rgb(132, 121, 230);
+  background-color: white;
+  border-radius: 10%;
+  padding: 7px;
+  /* float: left;
+  margin-left: 80px;
+  margin-right: 80px;
+  */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.catadioptric_img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 9%;
+  background: rgba(29, 106, 154, 0.72);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.catadioptric_img__description_text {
+  color: white;
+  font-size: 25px;
+  visibility: hidden;
+  font-family: "Cabin", sans-serif;
+}
+.catadioptric_img__wrap:hover .catadioptric_img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.catadioptric_img__wrap:hover .catadioptric_img__description_text {
+  visibility: visible;
+  opacity: 1;
+  padding-left: 30%;
+  padding-top: 22%;
+  font-family: "Cabin", sans-serif;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.catadioptric_img__wrap:hover ~ .catadioptric-text-box {
+  display: block;
+  opacity: 1;
+}
+/* ****************CATADIOPTRIC STOPS HERE***************** */
+
+/* ****************HIDDEN TEXT BOXES START HERE***************** */
+.reflector-text-box {
+  text-align: justify;
+  width: 40%;
+  /* padding-left: 32%;
+  padding-top: 40px;
+  margin-top: 80px;
+  */
+  color: white;
+  font-family: "Cabin", sans-serif;
+  display: none;
+}
+
+.refractor-text-box {
+  text-align: justify;
+  width: 40%;
+  /* padding-left: 32%;
+  padding-top: 40px;
+  margin-top: 80px;
+  */
+  color: white;
+  font-family: "Cabin", sans-serif;
+  display: none;
+}
+
+.catadioptric-text-box {
+  text-align: justify;
+  width: 40%;
+  /* padding-left: 32%;
+  padding-top: 40px;
+  margin-top: 80px;
+  */
+  color: white;
+  font-family: "Cabin", sans-serif;
+  display: none;
+}
+/* ^^^^^^^^^^^^^^^^HIDDEN TEXT BOXES STOP HERE^^^^^^^^^^^^^^^^ */
+
+
+
+/* ****************SIDE BAR STARTS HERE***************** */
+.wrapper {
+  display: block;
+}
+
+#sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100vh;
+  z-index: 999;
+  background: #03045e;
+  color: #ade8f4;
+  transition: all 0.3s;
+  overflow-y: scroll;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #0077b6;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#dismiss:hover {
+  background: #ade8f4;
+  color: #0096c7;
+}
+
+.fa-arrow-left {
+  background: #0077b6 !important;
+  color: #48cae4 !important;
+}
+
+.fa-arrow-left:hover {
+  background: #ade8f4 !important;
+  color: #0096c7 !important;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+.sidebar-header h3 {
+  color: #90e0ef;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #023e8a;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #0077b6;
+}
+
+#sidebar ul p {
+  color: #ade8f4;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #fff;
+  background: #00b4d8;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #fff !important;
+  background: #48cae4;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #0096c7;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #7386d5;
+}
+
+a.article,
+a.article:hover {
+  background: #0077b6 !important;
+  color: #fff !important;
+}
+
+#body-link {
+  /* text-decoration: underline !important; */
+  color: orange !important;
+}
+
+.entry-content a:hover {
+  cursor: pointer;
+}
+
+/* .d-flex {
+  word-wrap: break-word !important;
+} */
+
+dd {
+  font-size: small;
+}
+
+/* ********TOOLTIP START******* */
+.tooltipoop {
+  position: relative;
+  color: white;
+  display: inline-block;
+  border-bottom: 1px dotted white; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltipoop .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+  background-color: rgb(3, 4, 94);
+  color: #ADE8F4;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 7px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltipoop .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltipoop:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/* ********TOOLTIP END******* */
+
+/* .fas {
+  background: greenyellow !important;
+  border-color: pink !important;
+} */
+
+/* ^^^^^^^^^^^^^^^^SIDE BAR STOPS HERE^^^^^^^^^^^^^^^^ */

@@ -1,0 +1,26 @@
+{
+  "name": "seranet",
+  "version": "0.4.0",
+  "description": "a website that will become the portfolio of Seralyn",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seralyn/seranet.git"
+  },
+  "author": "Seralyn Campbell @seralyncampbell",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Seralyn/seranet/issues"
+  },
+  "homepage": "https://github.com/Seralyn/seranet#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@mui/material": "^5.2.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
