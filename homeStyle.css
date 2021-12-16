@@ -69,11 +69,12 @@ body {
 
 #helloBlurb {
     position: absolute;
-
+    
 }
 
 #bannerContainer {
     position: relative;
+    
 }
 
 #bannerContainer img {
