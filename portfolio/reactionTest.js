@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        #squareDiv {
-            width: 150px;
-            height: 150px;
-            background: red;
-            display: none;
-            position: relative;
-                    }
-
-        .boldText {
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <h1>Test your reactions!</h1>
-    <p>Click on the boxes as quickly as you can!</p>
-    <br>
-    <span class="boldText" id="resultsDisplay">Your reaction time was 0</span><span class="boldText">s.</span>
-    <div id="squareDiv"></div>
-    
-    
-    
-    <!-- <script type="text/Javascript src="reactionTest.js"> -->
-    <script>
-        //stopped working after I separated the JS from the HTML file for some reason...
+//stopped working after I separated the JS from the HTML file for some reason...
 
 
 let clickedTime; let createdTime; let reactionTime;
@@ -94,8 +56,4 @@ let clickedTime; let createdTime; let reactionTime;
                 this.style.display="none";
                 document.getElementById("resultsDisplay").innerHTML="Your reaction time was "+reactionTime;
                 makeBox();
-            }    
-    </script>
-
-</body>
-</html>
+            }
