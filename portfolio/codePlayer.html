@@ -20,17 +20,9 @@
             font-weight: 300;
         }
 
-        /* #topBarWrapper {
-            background-color: rgb(199, 199, 199);
-            color: black;
-            height: 50px;
-            border-style: solid;
-            border-width: 1px;
-            margin-top: -10px;
-            margin-left: -10px;
-            margin-right: -10px;
-            
-        } */
+        p {
+            color:lightgreen;
+        }
 
         .topBarWrapper {
             display: grid;
@@ -147,7 +139,7 @@
             padding-top: 10px;
             display: block;
             position:relative;
-            /* padding-bottom: 200%; */
+            
             
         }
 
@@ -158,7 +150,7 @@
             padding-top: 10px;
             display: block;
             position:relative;
-            /* padding-bottom: 200%; */
+            
         }
 
         #js-Editor { 
@@ -168,7 +160,7 @@
             padding-top: 10px;
             display: block;
             position:relative;
-            /* padding-bottom: 200%; */
+            
         }
 
         #result-Editor {
@@ -180,12 +172,12 @@
             margin-right: -8px;
             display: block;
             position:relative;
-            /* padding-bottom: 200%; */
+            
         }
 
         .typeLabelBox {
             margin-top:5px;
-            margin-left: 44ex;
+            margin-left: 40ex;
             position:absolute;
             border: 1px solid; 
             border-radius: 4px;
@@ -195,10 +187,6 @@
 
         .langButton {
             background-color: rgb(245, 204, 67);
-        }
-
-        p {
-            color:lightgreen;
         }
 
         input[type="text"], textarea {
@@ -234,16 +222,18 @@
             background-color: rgb(48, 56, 77);
             height: 100%;
             width: 100%;
-            /* margin-left:-9px;
-            margin-top:-9px; */
+            margin-left:-9px;
+            /* margin-top:-9px; */
             padding:0;
+            margin-top: 35px;
+            color:lightgreen;
         }
     </style>
 
     <body>
 
         <!-- START TOP BAR HERE -->
-        <div>
+        <div id="wrapper">
 
             <div class="topBarWrapper">
                 <div style="font-style: oblique; font-weight: bolder;" class="titleText">CodeRunner</div>
@@ -265,34 +255,27 @@
             <div class="editorContainer">
                 
                 <div id="html-Editor"><span class="typeLabelBox">HTML</span>
-                <textarea name="editHTML" id="htmlTextArea" cols="30" rows="10" placeholder="Type HTML here..."></textarea>
+                <textarea name="editHTML" id="htmlCode" cols="30" rows="10" placeholder="Type HTML here..."></textarea>
                 </div>
             
             
                 <div id="css-Editor"><span class="typeLabelBox">CSS</span>
-                    <textarea name="editHTML" id="cssTextArea" cols="30" rows="10" placeholder="Type CSS here..."></textarea>   
+                    <textarea name="editCSS" id="cssCode" cols="30" rows="10" placeholder="Type CSS here..."></textarea>   
                 </div>
         
             
                 <div id="js-Editor"><span class="typeLabelBox">JavaScript</span>
-                    <textarea name="editHTML" id="jsTextArea" cols="30" rows="10" placeholder="Type Javascript here..."></textarea>
+                    <textarea name="editJS" id="jsCode" cols="30" rows="10" placeholder="Type Javascript here..."></textarea>
                 </div>
         
             
                 <div id="result-Editor"><span class="typeLabelBox">Result</span>
-                    <iframe src="" frameborder="0"></iframe>
+                    <iframe id="resultFrame" src="" frameborder="0"></iframe>
                 </div>
                 
             </div>
 
-
-            
-        
-        
-
-        
-
-
+            <!-- Start JAVASCRIPT Here -->
         <script>
             var topBarHeight = $(".topBarWrapper").height();
             var windowHeight = $(window).height();
@@ -316,21 +299,10 @@
 
                 };
 
-            // function showAndTell(){
-            //     var whatIsId = document.getElementById(event.target.id);
-            //     console.log(whatIsId);
-            //     let amIShown = whatIsId.replace("-Editor", "Button");
-            //     console.log(amIShown);
-            //     amIShown = document.getElementById(amIShown).style.display;
-            //     console.log(amIShown);
-
-            //     if (amIShown == "block") {
-            //         document.getElementById(event.target.id).style.display = "none";
-            //     } else {
-            //         document.getElementById(event.target.id).style.display = "block";
-            //     }
-
-            //     };
+            $("#runButton").click(function() {
+                $("iframe").contents().find("html").html('<style>'+$("#cssCode").val()+'</style>'+$("#htmlCode").val());
+                document.getElementById("resultFrame").contentWindow.eval($("jsCode").val());
+            });
                         
         </script>
     </body>

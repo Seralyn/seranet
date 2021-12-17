@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    
+    <title>Form</title>
+</head>
+    <style>
+        body {
+            background-color: rgb(187, 82, 71);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+            color: rgb(110, 28, 19);
+        }
+
+        #wrapper {
+            background-color: rgb(206, 139, 139);
+            width: 400px;
+            height: 340px;
+            margin: 0 auto;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+        input {
+            border-radius: 5px;
+            width:150px;
+            height:15px;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            margin-left: 40%;
+        }
+
+        #submitButton {
+            height: 30px;
+            margin-left: 40%;
+            width: auto;
+            margin-top: 10px;
+        }
+
+        #redbook {
+            transform: scale(40%);
+            margin-top: 90px;
+            
+            
+        }
+
+        #redbookDiv {
+            width: 360px;
+            height: 0px;
+            margin-left: 46%;
+            margin-top: 15px;
+            padding-bottom: 1px;
+        }
+
+        #errorDiv {
+            margin-left: 37%;
+            margin-top: 15px;
+            align-items: center;
+            color: white;
+        }
+
+        #minicat {
+            height: 240px;
+            width: 200px;
+            transform: scale(1);
+            
+        }
+
+        #target {
+            height: 300px;
+            width: 300px;
+            background-color: green;
+        }
+    </style>
+
+<body>
+    <h1>Redbook&trade;</h1> <div id="redbookDiv"><img id="redbook" src="red-book.png"></div>
+    <hr>
+    <div id="wrapper">
+        
+        <form id="validationForm">
+            <span style="margin-bottom: 10px;">Register</span>    <span style="margin-bottom: 10px; float: right;">Already a user? <button>Log In</button></span>
+            <div>
+                <input style="margin-top: 10px" type="text" placeholder="First Name"><span>*</span>
+                <input type="text" placeholder="Last Name"><span>*</span>
+                <br>
+                <input type="text" placeholder="Year of Birth">
+                <br>
+                <input id="email" name="email" type="text" placeholder="Email Address"><span>*</span>
+                <br>
+                <input id="phone" name="phone" type="text" placeholder="Phone Number"><span>*</span>
+                <br>
+                <input id="userName" name="userName" type="text" placeholder="Username"><span>*</span>
+                <br>
+                <input id="password" name="pass" type="password" placeholder="Password"><span>*</span>     
+                <br>
+                <input id="passwordConfirmation" name="pass" type="password" placeholder="Confirm Password"><span>*</span>                   
+            </div>
+            <input id="submitButton" type="submit" value="Sign Up!"/>
+            
+        </form>
+    </div>
+
+    <div id="errorDiv"></div>
+
+    <div id="catDiv"><img id="minicat" src="minicat.jpeg"></div>
+
+    <div id="target"></div>
+    
+    
+    <script>
+        $("#redbook").draggable();
+        // $("#minicat").resizable();
+        $("#catDiv").droppable({
+            drop: function(ui, event){
+                alert("you hid the book behind the cat");
+            }
+        });
+        
+        $("#validationForm").submit(function(event){
+
+                let errorMessage="";
+
+                event.preventDefault();
+
+                function isValidEmailAddress(emailAddress) {
+                    var pattern = new RegExp(/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i);
+
+                    return pattern.test(emailAddress);
+                    };
+                    if (!isValidEmailAddress($("#email").val())) {
+                        errorMessage='<br><br>**Not a valid email address. Please use the format example@domain.com';
+                    }
+
+                    if (!$.isNumeric($("#phone").val())) {
+                        errorMessage=errorMessage+"<br><br>**Please enter a valid phone number.";
+                    }
+
+                    if ($("#password").val()!=$("#passwordConfirmation").val() || $("#password").val().length == 0) {
+                        errorMessage=errorMessage+"<br><br>**Please make sure the password and password confirmation match.";
+                    }
+
+                    if ($("#userName").val().length == 0) {
+                        errorMessage=errorMessage+"<br><br>**Please enter a user name.";
+                    }
+                    
+                    if (errorMessage=="") {
+                        alert("Thank you for registering.");
+                        
+                    } else {
+                    $("#errorDiv").html(errorMessage);
+                    }
+                });
+    </script>
+</body>
