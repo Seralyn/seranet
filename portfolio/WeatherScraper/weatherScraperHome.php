@@ -134,7 +134,7 @@
                 }
 
             }).fail(function() {
-                alert("test fail")
+                $("#resultsContainer").html("City not found. Please enter a valid city name.").fadeIn();
 });
         } else {
         
