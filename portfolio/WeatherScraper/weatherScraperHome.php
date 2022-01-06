@@ -69,8 +69,8 @@
     }
 
     #resultsContainer {
-        background-color: black;
-        opacity: 60%;
+        background-color: rgba(0,0,0,0.6);
+        /* opacity: 60%; */
         border-radius: 15px;
         margin-top: 2%;
         color: white;
@@ -131,14 +131,15 @@
                 if (data.includes("HTTP request failed")) {
                     
                     $("#resultsContainer").html("City not found. Please enter a valid city name.").fadeIn();
+                    $("#resultsContainer").css("background-color", "rgba(255, 66, 66, 0.6)");
                 }
 
             }).fail(function() {
-                $("#resultsContainer").html("City not found. Please enter a valid city name.").fadeIn();
+                alert("test fail")
 });
         } else {
         
-            $("#resultsContainer").html("Please enter a valid city name.").fadeIn();
+            $("#resultsContainer").html("Please enter a city.").fadeIn();
         }
     });
 
