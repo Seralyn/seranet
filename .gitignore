@@ -1,1 +1,4 @@
 node_modules/
+error_log
+.DS_Store
+portfolio/.DS_Store
