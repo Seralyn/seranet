@@ -105,7 +105,7 @@
         
         <div class="row justify-content-around text-center">
             <div class="col-md-7" id="resultsContainer">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium obcaecati minima unde repellendus rerum assumenda, est, similique sed consequatur aliquid accusamus dolorum ducimus in quibusdam labore nesciunt veritatis dolore inventore.
+                
             </div>
     
         </div>
@@ -127,6 +127,10 @@
             $.get("scraper.php?city="+$("#city").val(), function(data){
 
             $("#resultsContainer").html(data).fadeIn();
+
+            if (data="") {
+                $("#resultsContainer").html("City not found. Please enter a valid city name.").fadeIn();
+            }
 
             });
         } else {
