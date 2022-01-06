@@ -117,25 +117,28 @@
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-
+    
     $("#findMyWeather").click(function(event) {
         
         event.preventDefault();
 
         if($("#city").val()!="") {
-
+            
             $.get("scraper.php?city="+$("#city").val(), function(data){
+                
+                $("#resultsContainer").html(data).fadeIn();
+            
+                if (data.includes("HTTP request failed")) {
+                    
+                    $("#resultsContainer").html("City not found. Please enter a valid city name.").fadeIn();
+                }
 
-            $("#resultsContainer").html(data).fadeIn();
-
-            if (data="") {
-                $("#resultsContainer").html("City not found. Please enter a valid city name.").fadeIn();
-            }
-
-            });
+            }).fail(function() {
+                alert("test fail")
+});
         } else {
         
-            alert("Please enter a city name.");
+            $("#resultsContainer").html("Please enter a valid city name.").fadeIn();
         }
     });
 
