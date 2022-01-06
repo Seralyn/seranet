@@ -127,7 +127,7 @@
             $.get("scraper.php?city="+$("#city").val(), function(data){
                 
                 $("#resultsContainer").html(data).fadeIn();
-            
+                $("#resultsContainer").css("background-color", "rgba(0, 0, 0, 0.6)");
                 if (data.includes("HTTP request failed")) {
                     
                     $("#resultsContainer").html("City not found. Please enter a valid city name.").fadeIn();
@@ -139,7 +139,7 @@
                 $("#resultsContainer").css("background-color", "rgba(255, 66, 66, 0.6)");
 });
         } else {
-        
+            $("#resultsContainer").css("background-color", "rgba(0, 0, 0, 0.6)");
             $("#resultsContainer").html("Please enter a city.").fadeIn();
         }
     });
