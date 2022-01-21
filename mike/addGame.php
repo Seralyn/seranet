@@ -48,79 +48,86 @@ if (isset($_POST['submit'])) {
 </head>
 <body>
 	<div class="container" id="addGameContainer">
-		<form action="" method="post">
-            
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Add Game</p>
+        <div class="row">
+            <div class="col-9">
+                <form action="" method="post">
+                    
+                    <p class="login-text" style="font-size: 2rem; font-weight: 800;">Add Game</p>
 
-			<div class="form-group">
-				<input class="form-control" type="text" placeholder="Game Title" name="title" value="<?php echo $gameTitle; ?>" required>
-			</div>
-            <br>
-			<div class="form-group">
-				<input class="form-control" type="text" placeholder="System" name="system" value="<?php echo $system; ?>" required>
-			</div>
-            <br>
-			<div class="form-group">
-				<input class="form-control" type="number" placeholder="Release Year" name="releaseYear" value="" required>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Game Title" name="title" value="<?php echo $gameTitle; ?>" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="System" name="system" value="<?php echo $system; ?>" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input class="form-control" type="number" placeholder="Release Year" name="releaseYear" value="" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="genre">Genre</label>
+                        <br>
+                        <SELECT class="form-control" type="text" name="genre" value="<?php echo $_POST['genre']; ?>" required>
+                            <option value="Action">Action</option>
+                            <option value="Adventure">Adventure</option>    
+                            <option value="Action RPG">Action RPG</option>
+                            <option value="Fighting">Fighting</option>
+                            <option value="Platform">Platform</option>
+                            <option value="Puzzle">Puzzle</option>
+                            <option value="Racing">Racing</option>
+                            <option value="RPG">RPG</option>
+                            <option value="Shooter">Shooter</option>
+                            <option value="Simulation">Simulation</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Strategy">Strategy</option>
+                            <option value="Misc">Misc</option>
+                        </SELECT>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="gameCondition">Condition?</label>
+                        <br>
+                        <SELECT class="form-control" type="text" placeholder="Condition?" name="gameCondition" value="<?php echo $_POST['gameCondition']; ?>" required>
+                            <option value="Unopened">Unopened</option>
+                            <option value="Like New">Like New</option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Poor">Poor</option>
+                        </SELECT>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="haveCase">Original Case?</label>
+                        <br>
+                        <SELECT class="form-control" type="text" name="haveCase" value="<?php echo $_POST['haveCase']; ?>" required>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </SELECT>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                    <label for="haveBooklet">Original Booklet?</label>
+                        <br>
+                        <SELECT class="form-control" type="text" name="haveBooklet" value="<?php echo $_POST['haveBooklet']; ?>" required>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </SELECT>
+                    </div>
+                    
+                    <br>
+                    <div class="form-group">
+                        <button name="submit" class="btn btn-primary" id="addGameBtn">Add Game</button>
+                    </div>
+                        <div class="row">
+                            <div class="col-9 d-flex justify-content-center">
+                                <button class="btn btn-primary" id="backToLibraryBtn" onclick="location.href='library.php'">Back to Library</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <br>
-            <div class="form-group">
-                <label for="genre">Genre</label>
-                <br>
-				<SELECT class="form-control" type="text" name="genre" value="<?php echo $_POST['genre']; ?>" required>
-                    <option value="Action">Action</option>
-                    <option value="Adventure">Adventure</option>    
-                    <option value="Action RPG">Action RPG</option>
-                    <option value="Fighting">Fighting</option>
-                    <option value="Platform">Platform</option>
-                    <option value="Puzzle">Puzzle</option>
-                    <option value="Racing">Racing</option>
-                    <option value="RPG">RPG</option>
-                    <option value="Shooter">Shooter</option>
-                    <option value="Simulation">Simulation</option>
-                    <option value="Sports">Sports</option>
-                    <option value="Strategy">Strategy</option>
-                    <option value="Misc">Misc</option>
-                </SELECT>
-			</div>
-            <br>
-            <div class="form-group">
-                <label for="gameCondition">Condition?</label>
-                <br>
-				<SELECT class="form-control" type="text" placeholder="Condition?" name="gameCondition" value="<?php echo $_POST['gameCondition']; ?>" required>
-                    <option value="Unopened">Unopened</option>
-                    <option value="Like New">Like New</option>
-                    <option value="Excellent">Excellent</option>
-                    <option value="Good">Good</option>
-                    <option value="Poor">Poor</option>
-                </SELECT>
-			</div>
-            <br>
-            <div class="form-group">
-				<label for="haveCase">Original Case?</label>
-                <br>
-                <SELECT class="form-control" type="text" name="haveCase" value="<?php echo $_POST['haveCase']; ?>" required>
-                    <option value="1">Yes</option>
-                    <option value="0">No</option>
-                </SELECT>
-			</div>
-            <br>
-            <div class="form-group">
-            <label for="haveBooklet">Original Booklet?</label>
-                <br>
-				<SELECT class="form-control" type="text" name="haveBooklet" value="<?php echo $_POST['haveBooklet']; ?>" required>
-                    <option value="1">Yes</option>
-                    <option value="0">No</option>
-                </SELECT>
-			</div>
-            
-            <br>
-			<div class="form-group">
-				<button name="submit" class="btn btn-primary" id="addGameBtn">Add Game</button>
-			</div>
-            
-			<button class="btn btn-primary" id="backToLibraryBtn" onclick="location.href='library.php'">Back to Library</button>
-		</form>
+        </div>
 	</div>
 </body>
 </html>

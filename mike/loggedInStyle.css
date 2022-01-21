@@ -5,7 +5,7 @@ body {
     url(bg02.jpg);
   background-position: center;
   background-size: cover;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   /* align-items: center; */
   color: rgb(134, 255, 179);
@@ -17,6 +17,14 @@ body {
 #addGameContainer {
     width: 30%;
 }
+
+@media (max-width: 1300px) {
+    #addGameContainer {
+        width: 80%;
+    }
+}
+
+
 
 .form-control {
     width: 85%;
@@ -158,6 +166,7 @@ body {
     border-radius: 7px;
     padding: 5px;
     width: 25%;
+    min-width: 120px;
     height: 50px;
     font-size: 1.3em;
     margin-bottom: 4%;
@@ -168,6 +177,7 @@ body {
     border-radius: 4px;
     padding: 5px;
     width: 30%;
+    min-width: 150px;
     height: 40px;
     font-size: 1.1em;
 
