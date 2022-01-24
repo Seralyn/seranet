@@ -66,7 +66,7 @@ if (!isset($_SESSION['username'])) {
                 <tbody>
                 <?php
                                 
-                $con = mysqli_connect("localhost", "root", "root", "mfsGamesCollection");
+                $con = mysqli_connect("localhost", "seralyn", "Tiamat1984", "mikesDB");
                 // Check connection
                 if (mysqli_connect_errno())
                 {
