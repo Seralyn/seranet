@@ -1,9 +1,9 @@
 <?php 
 
 $server = "localhost";
-$user = "root";
-$pass = "root";
-$database = "mfsGamesCollection";
+$user = "seralyn";
+$pass = "Tiamat1984";
+$database = "mikesDB";
 
 $conn = mysqli_connect($server, $user, $pass, $database);
 

@@ -14,10 +14,17 @@ if (!isset($_SESSION['username'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- IMPORT BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- IMPORT GOOGLE FONT -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">  -->
 
     <link rel="stylesheet" type="text/css" href="loggedInStyle.css">
-    <title>Welcome</title>
+    <title>Games Library</title>
 </head>
 
 <body>
@@ -37,6 +44,12 @@ if (!isset($_SESSION['username'])) {
             </div>
         </div>
 
+        <div class="row d-flex btn justify-content-center">
+            <div class="col-9">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for games..">
+            </div>
+        </div>
+
         <div class="tg-wrap row">
             <table id="tg-EM4pL" class="tg">
                 <thead>
@@ -53,7 +66,7 @@ if (!isset($_SESSION['username'])) {
                 <tbody>
                 <?php
                                 
-                $con = mysqli_connect("localhost", "root", "root", "mfsGamesCollection");
+                $con = mysqli_connect("localhost", "seralyn", "Tiamat1984", "mikesDB");
                 // Check connection
                 if (mysqli_connect_errno())
                 {
@@ -97,6 +110,8 @@ if (!isset($_SESSION['username'])) {
 
 
     <script charset="utf-8">
+
+        // TABLE SORTING ASC-DESC
         var TGSort = window.TGSort || function(n) {
             "use strict";
 
@@ -224,6 +239,29 @@ if (!isset($_SESSION['username'])) {
                 } catch (n) {}
             })
         }(document)
+
+        // TABLE SEARCH FILTER
+        function myFunction() {
+        // Declare variables
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("tg-EM4pL");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
     </script>
     
 </body>
