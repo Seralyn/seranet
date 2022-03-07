@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="src/style.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Food Ninja</title>
+    </head>
+    <body class="text-gray-600 font-body bg-gray-100">
+        <div class="bg-gray-100 grid md:grid-cols-3">
+            <!--CONTENT WRAPPER-->
+            <div class="md:col-span-1bvcxz md:flex md:justify-end">
+                <nav class="text-right">
+                    <div class="text-3xl flex justify-between items-center">
+                        <!-- prettier-ignore -->
+                        <h1 class="font-bold uppercase p-4 ">
+                            <!-- prettier-ignore -->
+                            <a href="/" class="text-green-500 sm:text-primary lg:text-blue-500 hover:text-amber-600">Food Ninja</a>
+                        </h1>
+                        <div class="px-4 cursor-pointer md:hidden" id="burger">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 text-red-600 hover:text-red-800 hover:inner-shadow"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="{2}"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <ul class="text-sm mt-6 hidden md:block" id="menu">
+                        <li class="text-gray-700 pb-3">
+                            <!-- prettier-ignore -->
+                            <a href="#" class="flex px-4 justify-end border-r-4 border-primary">
+                                <span class="">Home</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 ml-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="text-gray-400 pb-3">
+                            <!-- prettier-ignore -->
+                            <a href="#" class="flex px-4 justify-end border-r-4 border-gray-100">
+                                <span>About</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 ml-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="text-gray-400 pb-3">
+                            <!-- prettier-ignore -->
+                            <a href="#" class="flex px-4 justify-end border-r-4 border-gray-100">
+                                <span>Contact</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 ml-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--END NAV-->
+
+            <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+                <div class="flex text-primary justify-center md:justify-end">
+                    <a
+                        href="#"
+                        class="btn bg-primary text-white hover:bg-red-600 transition ease-in duration-300"
+                        >Log In</a
+                    >
+                    <a
+                        href="#"
+                        class="ml-8 btn bg-primary text-white hover:bg-red-600 transition ease-in duration-300"
+                        >Sign up</a
+                    >
+                </div>
+
+                <header>
+                    <h2 class="text-5xl font-light text-gray-700">Recipes</h2>
+                    <h3 class="text-2xl font-light text-gray-400">
+                        For Ninjas
+                    </h3>
+                </header>
+
+                <div>
+                    <!-- prettier-ignore -->
+                    <h4 class="font-bold mt-12 pb-2 border-b border-red-200">Latest Recipes</h4>
+
+                    <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                        <!--cards go here-->
+                        <div
+                            class="card transform duration-300 hover:scale-110 transition ease-out"
+                        >
+                            <img
+                                src="img/stew.jpg"
+                                alt=""
+                                class="w-full h-32 sm:h-48 object-cover"
+                            />
+                            <div class="m-4">
+                                <span class="font-bold">5 Bean Chili Stew</span>
+                                <span class="block text-gray-500 text-sm"
+                                    >Recipe by Mario</span
+                                >
+                            </div>
+                            <div class="badge">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 inline-block"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    />
+                                </svg>
+                                <span>25 mins</span>
+                            </div>
+                        </div>
+                        <div
+                            class="card transform duration-300 hover:scale-110 transition ease-out"
+                        >
+                            <img
+                                src="img/noodles.jpg"
+                                alt=""
+                                class="w-full h-32 sm:h-48 object-cover"
+                            />
+                            <div class="m-4">
+                                <span class="font-bold"
+                                    >Pad-Tie Your Shoes</span
+                                >
+                                <span class="block text-gray-500 text-sm"
+                                    >Recipe by Seralyn</span
+                                >
+                            </div>
+                            <div class="badge">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 inline-block"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    />
+                                </svg>
+                                <span>15 mins</span>
+                            </div>
+                        </div>
+                        <div
+                            class="card transform duration-300 hover:scale-110 transition ease-out"
+                        >
+                            <img
+                                src="img/curry.jpg"
+                                alt=""
+                                class="w-full h-32 sm:h-48 object-cover"
+                            />
+                            <div class="m-4">
+                                <span class="font-bold"
+                                    >Salty Bar-shay (but for my Indian
+                                    boyfriend)</span
+                                >
+                                <span class="block text-gray-500 text-sm"
+                                    >Recipe by Gabi</span
+                                >
+                            </div>
+                            <div class="badge">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 inline-block"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    />
+                                </svg>
+                                <span>All Fucking Afternoon</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="font-bold mt-12 pb-2 border-b border-red-200">
+                        Most Popular
+                    </h4>
+                    <div class="mt-8">
+                        <!--cards go here-->
+                    </div>
+
+                    <div class="flex justify-center">
+                        <!-- prettier-ignore -->
+                        <div class="bg-secondary-100 text-secondary-200 btn hover:inner-shadow transform duration-75 hover:scale-125 hover:bg-opacity-50">
+                            Load more ...
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
