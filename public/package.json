@@ -4,7 +4,7 @@
   "description": "a website that will become the portfolio of Seralyn",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css": "tailwindcss build -i src/style.css -o public/style.css"
   },
   "repository": {
     "type": "git",
