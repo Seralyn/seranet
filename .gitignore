@@ -1,4 +1,7 @@
 node_modules/
 error_log
 .DS_Store
+public/.DS_Store
 portfolio/.DS_Store
+config.codekit3
+config.codekit3~merged
