@@ -71,3 +71,11 @@
 .hidden2 {
   display: none;
 }
+
+.min-h-100vh {
+  min-height: 100vh;
+}
+
+.min-h-05 {
+  min-height: 50%;
+}

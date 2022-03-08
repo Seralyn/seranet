@@ -650,12 +650,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-1\/2{
-  height: 50%;
-}
-
 .h-6{
   height: 1.5rem;
+}
+
+.h-1\/2{
+  height: 50%;
 }
 
 .h-20{
@@ -680,6 +680,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-8{
   height: 2rem;
+}
+
+.min-h-0{
+  min-height: 0px;
 }
 
 .w-6{
@@ -1120,6 +1124,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hidden2 {
   display: none;
+}
+
+.min-h-100vh {
+  min-height: 100vh;
+}
+
+.min-h-05 {
+  min-height: 50%;
 }
 
 .hover\:scale-110:hover{
