@@ -25,374 +25,41 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/index.html",
+      "oF" : 0
+    },
     "\/node_modules" : {
       "ft" : 65536,
       "oA" : 2,
       "oAP" : "\/node_modules",
       "oF" : 0
     },
-    "\/public\/alt\/form.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/alt\/form.php",
-      "oF" : 0
-    },
-    "\/public\/alt\/homeStyle.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/alt\/homeStyle-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/public\/alt\/newHome.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/alt\/newHome.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/.vscode\/settings.json" : {
+    "\/package-lock.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/public\/astro\/.vscode\/settings-min.json",
+      "oAP" : "\/package-lock-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
-    "\/public\/astro\/about.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/about.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/astro.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/astro-min.js",
+    "\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/package-min.json",
       "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
+      "oO" : 1,
+      "oS" : 1
     },
-    "\/public\/astro\/astrostyle.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/astrostyle-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/public\/astro\/calc.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/calc.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/calc.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/calc-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/public\/astro\/emissnebu.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/emissnebu.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/galaxies.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/galaxies.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/home.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/home.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/images\/apple.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/public\/astro\/images\/apple.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/public\/astro\/images\/catadioptric.jpg" : {
-      "ft" : 16384,
-      "iS" : 67967,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/images\/catadioptric.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/public\/astro\/images\/linux.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/public\/astro\/images\/linux.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/public\/astro\/images\/minicat.jpeg" : {
-      "ft" : 16384,
-      "iS" : 3818529,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/images\/minicat.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/public\/astro\/images\/MWBG-JT.jpg" : {
-      "ft" : 16384,
-      "iS" : 3871388,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/images\/MWBG-JT.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/public\/astro\/images\/Newtonian-light-path.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/public\/astro\/images\/Newtonian-light-path.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/public\/astro\/images\/reflector.jpg" : {
-      "ft" : 16384,
-      "iS" : 12524,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/images\/reflector.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/public\/astro\/images\/refractor.jpg" : {
-      "ft" : 16384,
-      "iS" : 34608,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/images\/refractor.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/public\/astro\/links.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/links.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/linsoft.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/linsoft.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/lunarphotog.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/lunarphotog.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/macsoft.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/macsoft.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/mobisoft.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/mobisoft.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/observing.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/observing.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/planetaryphotog.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/planetaryphotog.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/references.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/references.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/reflneb.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/reflneb.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/sidebar.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/sidebar.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/software.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/software.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/solarphotog.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/solarphotog.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/style3.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/style3-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/public\/astro\/telescopes.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/telescopes.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/test.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/test-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/public\/astro\/test.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/test.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/widefield.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/widefield.html",
-      "oF" : 0
-    },
-    "\/public\/astro\/winsoft.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/astro\/winsoft.html",
-      "oF" : 0
-    },
-    "\/public\/extra_icons\/aboutMeIcon.png" : {
+    "\/public\/assets\/ico\/aboutMeIcon.png" : {
       "ft" : 32768,
       "iS" : 3514,
       "oA" : 0,
-      "oAP" : "\/public\/extra_icons\/aboutMeIcon.png",
+      "oAP" : "\/public\/assets\/ico\/aboutMeIcon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -401,11 +68,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/extra_icons\/contactIcon.png" : {
+    "\/public\/assets\/ico\/contactIcon.png" : {
       "ft" : 32768,
       "iS" : 3792,
       "oA" : 0,
-      "oAP" : "\/public\/extra_icons\/contactIcon.png",
+      "oAP" : "\/public\/assets\/ico\/contactIcon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -414,11 +81,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/extra_icons\/facebookIcon.png" : {
+    "\/public\/assets\/ico\/facebookIcon.png" : {
       "ft" : 32768,
       "iS" : 1232,
       "oA" : 0,
-      "oAP" : "\/public\/extra_icons\/facebookIcon.png",
+      "oAP" : "\/public\/assets\/ico\/facebookIcon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -427,11 +94,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/extra_icons\/instagramIcon.png" : {
+    "\/public\/assets\/ico\/instagramIcon.png" : {
       "ft" : 32768,
       "iS" : 4559,
       "oA" : 0,
-      "oAP" : "\/public\/extra_icons\/instagramIcon.png",
+      "oAP" : "\/public\/assets\/ico\/instagramIcon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -440,11 +107,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/extra_icons\/linkedinIcon.png" : {
+    "\/public\/assets\/ico\/linkedinIcon.png" : {
       "ft" : 32768,
       "iS" : 2501,
       "oA" : 0,
-      "oAP" : "\/public\/extra_icons\/linkedinIcon.png",
+      "oAP" : "\/public\/assets\/ico\/linkedinIcon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -453,11 +120,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/extra_icons\/portfolioIcon.png" : {
+    "\/public\/assets\/ico\/portfolioIcon.png" : {
       "ft" : 32768,
       "iS" : 3041,
       "oA" : 0,
-      "oAP" : "\/public\/extra_icons\/portfolioIcon.png",
+      "oAP" : "\/public\/assets\/ico\/portfolioIcon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -466,11 +133,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/extra_icons\/resumeIcon.png" : {
+    "\/public\/assets\/ico\/resumeIcon.png" : {
       "ft" : 32768,
       "iS" : 5654,
       "oA" : 0,
-      "oAP" : "\/public\/extra_icons\/resumeIcon.png",
+      "oAP" : "\/public\/assets\/ico\/resumeIcon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -479,19 +146,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/home.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/public\/home.html",
-      "oF" : 0
-    },
-    "\/public\/images\/clients\/googleLogo.png" : {
+    "\/public\/assets\/img\/clients\/googleLogo.png" : {
       "ft" : 32768,
       "iS" : 28751,
       "oA" : 0,
-      "oAP" : "\/public\/images\/clients\/googleLogo.png",
+      "oAP" : "\/public\/assets\/img\/clients\/googleLogo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -500,11 +159,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/images\/clients\/jntoLogo.png" : {
+    "\/public\/assets\/img\/clients\/jntoLogo.png" : {
       "ft" : 32768,
       "iS" : 9717,
       "oA" : 0,
-      "oAP" : "\/public\/images\/clients\/jntoLogo.png",
+      "oAP" : "\/public\/assets\/img\/clients\/jntoLogo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -513,11 +172,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/images\/clients\/kodanshaLogo.png" : {
+    "\/public\/assets\/img\/clients\/kodanshaLogo.png" : {
       "ft" : 32768,
       "iS" : 6597,
       "oA" : 0,
-      "oAP" : "\/public\/images\/clients\/kodanshaLogo.png",
+      "oAP" : "\/public\/assets\/img\/clients\/kodanshaLogo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -526,11 +185,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/images\/clients\/nhkLogo.svg.png" : {
+    "\/public\/assets\/img\/clients\/nhkLogo.svg.png" : {
       "ft" : 32768,
       "iS" : 22865,
       "oA" : 0,
-      "oAP" : "\/public\/images\/clients\/nhkLogo.svg.png",
+      "oAP" : "\/public\/assets\/img\/clients\/nhkLogo.svg.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -539,11 +198,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/images\/clients\/oppoLogo.png" : {
+    "\/public\/assets\/img\/clients\/oppoLogo.png" : {
       "ft" : 32768,
       "iS" : 172779,
       "oA" : 0,
-      "oAP" : "\/public\/images\/clients\/oppoLogo.png",
+      "oAP" : "\/public\/assets\/img\/clients\/oppoLogo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -552,11 +211,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/images\/clients\/uibsLogo.png" : {
+    "\/public\/assets\/img\/clients\/uibsLogo.png" : {
       "ft" : 32768,
       "iS" : 185704,
       "oA" : 0,
-      "oAP" : "\/public\/images\/clients\/uibsLogo.png",
+      "oAP" : "\/public\/assets\/img\/clients\/uibsLogo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -565,11 +224,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/images\/SCFavicoLOGO.png" : {
+    "\/public\/assets\/img\/SCFavicoLOGO.png" : {
       "ft" : 32768,
       "iS" : 8523,
       "oA" : 0,
-      "oAP" : "\/public\/images\/SCFavicoLOGO.png",
+      "oAP" : "\/public\/assets\/img\/SCFavicoLOGO.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -578,12 +237,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/images\/seraBanner.jpg" : {
+    "\/public\/assets\/img\/seraBanner.jpg" : {
       "ft" : 16384,
       "iS" : 665788,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/public\/images\/seraBanner.jpg",
+      "oAP" : "\/public\/assets\/img\/seraBanner.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -591,12 +250,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/images\/seraBanner2.jpg" : {
+    "\/public\/assets\/img\/seraBanner2.jpg" : {
       "ft" : 16384,
       "iS" : 374634,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/public\/images\/seraBanner2.jpg",
+      "oAP" : "\/public\/assets\/img\/seraBanner2.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -604,11 +263,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/images\/seralynBustUp.png" : {
+    "\/public\/assets\/img\/seralynBustUp.png" : {
       "ft" : 32768,
       "iS" : 23455313,
       "oA" : 0,
-      "oAP" : "\/public\/images\/seralynBustUp.png",
+      "oAP" : "\/public\/assets\/img\/seralynBustUp.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -617,12 +276,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/images\/seralynProfile.jpeg" : {
+    "\/public\/assets\/img\/seralynProfile.jpeg" : {
       "ft" : 16384,
       "iS" : 1179357,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/public\/images\/seralynProfile.jpg",
+      "oAP" : "\/public\/assets\/img\/seralynProfile.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -630,12 +289,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/public\/images\/seralynProfile02.jpeg" : {
+    "\/public\/assets\/img\/seralynProfile02.jpeg" : {
       "ft" : 16384,
       "iS" : 648656,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/public\/images\/seralynProfile02.jpg",
+      "oAP" : "\/public\/assets\/img\/seralynProfile02.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -828,21 +487,334 @@
       "oAP" : "\/public\/node_modules",
       "oF" : 0
     },
-    "\/public\/package-lock.json" : {
+    "\/public\/portfolio\/astro\/.vscode\/settings.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/public\/package-lock-min.json",
+      "oAP" : "\/public\/portfolio\/astro\/.vscode\/settings-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
-    "\/public\/package.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/public\/package-min.json",
+    "\/public\/portfolio\/astro\/about.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/about.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/astro.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/astro-min.js",
       "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/public\/portfolio\/astro\/astrostyle.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/astrostyle-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/public\/portfolio\/astro\/calc.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/calc.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/calc.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/calc-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/public\/portfolio\/astro\/emissnebu.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/emissnebu.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/galaxies.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/galaxies.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/home.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/home.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/images\/apple.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/public\/portfolio\/astro\/images\/apple.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/public\/portfolio\/astro\/images\/catadioptric.jpg" : {
+      "ft" : 16384,
+      "iS" : 67967,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/images\/catadioptric.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/public\/portfolio\/astro\/images\/linux.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/public\/portfolio\/astro\/images\/linux.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/public\/portfolio\/astro\/images\/minicat.jpeg" : {
+      "ft" : 16384,
+      "iS" : 3818529,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/images\/minicat.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/public\/portfolio\/astro\/images\/MWBG-JT.jpg" : {
+      "ft" : 16384,
+      "iS" : 3871388,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/images\/MWBG-JT.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/public\/portfolio\/astro\/images\/Newtonian-light-path.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/public\/portfolio\/astro\/images\/Newtonian-light-path.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/public\/portfolio\/astro\/images\/reflector.jpg" : {
+      "ft" : 16384,
+      "iS" : 12524,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/images\/reflector.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/public\/portfolio\/astro\/images\/refractor.jpg" : {
+      "ft" : 16384,
+      "iS" : 34608,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/images\/refractor.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/public\/portfolio\/astro\/links.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/links.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/linsoft.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/linsoft.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/lunarphotog.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/lunarphotog.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/macsoft.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/macsoft.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/mobisoft.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/mobisoft.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/observing.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/observing.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/planetaryphotog.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/planetaryphotog.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/references.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/references.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/reflneb.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/reflneb.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/sidebar.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/sidebar.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/software.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/software.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/solarphotog.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/solarphotog.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/style3.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/style3-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/public\/portfolio\/astro\/telescopes.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/telescopes.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/test.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/test-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/public\/portfolio\/astro\/test.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/test.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/widefield.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/widefield.html",
+      "oF" : 0
+    },
+    "\/public\/portfolio\/astro\/winsoft.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/astro\/winsoft.html",
+      "oF" : 0
     },
     "\/public\/portfolio\/CodePlayer\/codePlayer.html" : {
       "cB" : 0,
@@ -1074,6 +1046,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/public\/portfolio\/guessMyNumber\/src\/style-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/public\/portfolio\/guessMyNumber\/src\/style-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/public\/portfolio\/guessMyNumber\/src\/style.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1302,6 +1286,33 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/public\/style-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/src\/sass\/style.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/sass\/style.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/src\/style-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/style-min-min.css",
       "oF" : 0,
       "pg" : 0
     },
