@@ -1,0 +1,7 @@
+ /* // Set each `background-image` using a SCSS `for` loop */
+ @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      background-image: url("..public/assets/img/portraits/image#{$i}.jpg");
+    }
+  }
+}

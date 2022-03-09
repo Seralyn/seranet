@@ -507,12 +507,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
-.mt-96{
-  margin-top: 24rem;
-}
-.mt-10{
-  margin-top: 2.5rem;
-}
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -549,6 +543,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-8{
   margin-top: 2rem;
 }
+.mt-10{
+  margin-top: 2.5rem;
+}
 .mb-20{
   margin-bottom: 5rem;
 }
@@ -579,11 +576,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hidden{
   display: none;
 }
-.h-6{
-  height: 1.5rem;
-}
 .h-20{
   height: 5rem;
+}
+.h-6{
+  height: 1.5rem;
 }
 .h-5{
   height: 1.25rem;
@@ -638,12 +635,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.items-start{
-  align-items: flex-start;
-}
-.items-end{
-  align-items: flex-end;
-}
 .items-center{
   align-items: center;
 }
@@ -658,15 +649,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .gap-10{
   gap: 2.5rem;
-}
-.overflow-scroll{
-  overflow: scroll;
-}
-.rounded{
-  border-radius: 0.25rem;
-}
-.border-\[1px\]{
-  border-width: 1px;
 }
 .border{
   border-width: 1px;
@@ -686,14 +668,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-solid{
   border-style: solid;
 }
-.border-cyan-300{
-  --tw-border-opacity: 1;
-  border-color: rgb(103 232 249 / var(--tw-border-opacity));
-}
-.border-cyan-700{
-  --tw-border-opacity: 1;
-  border-color: rgb(14 116 144 / var(--tw-border-opacity));
-}
 .border-gray-100{
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
@@ -710,17 +684,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-.bg-black{
+.bg-slate-600{
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-.bg-red-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 .bg-slate-100{
   --tw-bg-opacity: 1;
@@ -730,18 +700,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-opacity-20{
-  --tw-bg-opacity: 0.2;
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .object-cover{
   -o-object-fit: cover;
   object-fit: cover;
 }
-.p-3{
-  padding: 0.75rem;
-}
 .p-5{
   padding: 1.25rem;
+}
+.p-3{
+  padding: 0.75rem;
 }
 .p-4{
   padding: 1rem;
@@ -791,10 +762,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-right{
   text-align: right;
 }
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -810,6 +777,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-6xl{
   font-size: 3.75rem;
@@ -852,10 +823,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
-.text-red-400{
-  --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
-}
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -864,14 +831,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(241 245 249 / var(--tw-text-opacity));
 }
-.shadow-md{
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.opacity-20{
+  opacity: 0.2;
 }
-.shadow-black{
-  --tw-shadow-color: #000;
-  --tw-shadow: var(--tw-shadow-colored);
+.opacity-40{
+  opacity: 0.4;
 }
 .outline{
   outline-style: solid;

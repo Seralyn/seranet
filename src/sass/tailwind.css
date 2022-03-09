@@ -11,8 +11,6 @@
   animation: gradient 15s ease infinite;
   height: 100vh;
   color: white;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 @keyframes gradient {
@@ -107,34 +105,34 @@
   justify-self: start;
 }
 .image:nth-child(1) {
-  background-image: url("/public/assets/img/portraits/image1.jpg");
+  background-image: url("..public/assets/img/portraits/image1.jpg");
 }
 .image:nth-child(2) {
-  background-image: url("/public/assets/img/portraits/image2.jpg");
+  background-image: url("..public/assets/img/portraits/image2.jpg");
 }
 .image:nth-child(3) {
-  background-image: url("/public/assets/img/portraits/image3.jpg");
+  background-image: url("..public/assets/img/portraits/image3.jpg");
 }
 .image:nth-child(4) {
-  background-image: url("/public/assets/img/portraits/image4.jpg");
+  background-image: url("..public/assets/img/portraits/image4.jpg");
 }
 .image:nth-child(5) {
-  background-image: url("/public/assets/img/portraits/image5.jpg");
+  background-image: url("..public/assets/img/portraits/image5.jpg");
 }
 .image:nth-child(6) {
-  background-image: url("/public/assets/img/portraits/image6.jpg");
+  background-image: url("..public/assets/img/portraits/image6.jpg");
 }
 .image:nth-child(7) {
-  background-image: url("/public/assets/img/portraits/image7.jpg");
+  background-image: url("..public/assets/img/portraits/image7.jpg");
 }
 .image:nth-child(8) {
-  background-image: url("/public/assets/img/portraits/image8.jpg");
+  background-image: url("..public/assets/img/portraits/image8.jpg");
 }
 .image:nth-child(9) {
-  background-image: url("/public/assets/img/portraits/image9.jpg");
+  background-image: url("..public/assets/img/portraits/image9.jpg");
 }
 .image:nth-child(10) {
-  background-image: url("/public/assets/img/portraits/image10.jpg");
+  background-image: url("..public/assets/img/portraits/image10.jpg");
 }
 
 /* // Adjusting layout for small screens */
