@@ -58,7 +58,7 @@ fakeScroll.className = "fake-scroll";
 document.body.appendChild(fakeScroll);
 // In the `setupAnimation` function (below) we will set the `height` properly
 
-// Geeting dimmensions and setting up all for animation
+// Getting dimmensions and setting up all for animation
 function setupAnimation() {
   // Updating dimmensions
   windowWidth = window.innerWidth;

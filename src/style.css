@@ -95,7 +95,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 100%;
 }
 
 /* // Styles for image elements
@@ -120,16 +120,16 @@
   /* background-image: url("/public/assets/img/portraits/image2.jpg"); */
 }
 .image:nth-child(3) {
-  background-image: url("/public/assets/img/portraits/image3.jpg");
+  /* background-image: url("/public/assets/img/portraits/image3.jpg"); */
 }
 .image:nth-child(4) {
-  background-image: url("/public/assets/img/portraits/image4.jpg");
+  background-image: url("/public/assets/img/portfolioSiteThumbs/weatherScraperThumb.png");
 }
 .image:nth-child(5) {
-  background-image: url("/public/assets/img/portraits/image5.jpg");
+  background-image: url("/public/assets/img/portfolioSiteThumbs/foodSiteThumb.png");
 }
 .image:nth-child(6) {
-  background-image: url("/public/assets/img/portraits/image6.jpg");
+  background-image: url("/public/assets/img/portfolioSiteThumbs/guessNumberThumb.png");
 }
 .image:nth-child(7) {
   background-image: url("/public/assets/img/portraits/image7.jpg");
