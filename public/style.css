@@ -1208,19 +1208,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .image:nth-child(7) {
-  background-image: url("/public/assets/img/portraits/image7.jpg");
+  /* background-image: url("/public/assets/img/portraits/image7.jpg"); */
 }
 
 .image:nth-child(8) {
-  background-image: url("/public/assets/img/portraits/image8.jpg");
+  /* background-image: url("/public/assets/img/portraits/image8.jpg"); */
 }
 
 .image:nth-child(9) {
-  background-image: url("/public/assets/img/portraits/image9.jpg");
+  /* background-image: url("/public/assets/img/portraits/image9.jpg"); */
 }
 
 .image:nth-child(10) {
-  background-image: url("/public/assets/img/portraits/image10.jpg");
+  /* background-image: url("/public/assets/img/portraits/image10.jpg"); */
 }
 
 /* // Adjusting layout for small screens */
