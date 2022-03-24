@@ -30,6 +30,10 @@
   @apply border-[1px] border-cyan-300 shadow-md shadow-black p-3 rounded bg-black bg-opacity-20 h-min;
 }
 
+.lang-card {
+  @apply border-[1px] border-cyan-300 shadow-md shadow-black p-3 rounded bg-black bg-opacity-20 h-min w-1/4;
+}
+
 .contactCard {
   @apply border-[1px] border-cyan-300 shadow-md shadow-black rounded bg-black bg-opacity-20 h-32 w-60 flex flex-col justify-center items-center text-xl;
 }
@@ -69,11 +73,10 @@ input[type="text"] {
 .flex-container {
   display: flex;
   min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  /* padding-top: 15%; */
+  /* justify-content: center;
+  align-items: center; */
   flex-direction: column;
-  /* background: rgba(194, 181, 5, 0.37); */
+  /* background: rgba(194, 181, 5, 0.7); */
 }
 
 .grid-container {

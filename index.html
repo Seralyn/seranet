@@ -14,7 +14,7 @@
       class="flex-container justify-center align-bottom"
     >
       <div id="sectionOneContentContainer" class="">
-        <div class="card fixed top-1/3 left-[40%] w-min-[335px]">
+        <div class="card fixed top-1/3 left-[40%] w-min-[335px]" id="introCard">
           <h1 class="comfortaa text-4xl font-light">
             <code>&lthello></code><br />
 
@@ -52,7 +52,7 @@
     </section>
     <!-- END SECTION ONE -->
     <!-- START SECTION TWO (PortraitSelf) -->
-    <section id="sectionTwoContainer" class="flex-container m-60 rounded-lg">
+    <section id="sectionTwoContainer" class="flex-container m-60 rounded-lg justify-center items-center">
       <div class="contentContainer" id="sectionTwoContentContainer">
         <div id="seraPhoto" class="oval-photo-frame border-[1px] border-cyan-300 shadow-md shadow-black overflow-hidden shadow-black">
           <img src="/public/assets/img/portraits/image2.jpg" alt="" />
@@ -282,38 +282,89 @@
     </section>
 
     <!-- SECTION SIX START (Languages)-->
-    <section id="sectionSixContainer" class="flex-container">
-      <div class="flex">
-        <div>
+    <section id="sectionSixContainer" class="flex-container justify-start mt-32">
+      <div class="flex justify-center mb-32">
+        <div class="">
           <h1 class="comfortaa text-4xl">Languages I speak</h1>
         </div>
       </div>
-      <div class="flex mt-24">
-        <div class="card">
-          <h1 class="comfortaa text-3xl text-center underline">Human</h1>
-          <ul class="bullets ml-4">
-            <li>English: Native</li>
-            <li>Japanese: Fluent</li>
-            <li>Spanish: Proficient</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h1 class="comfortaa text-3xl text-center underline">Computer</h1>
-          <ul class="bullets ml-4">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>Swift</li>
-          </ul>
-        </div>
-      </div>
+      <div class="flex justify-evenly">
+        <div class="lang-card">
+            <h1 class="comfortaa text-3xl text-center">Human</h1>
+            <ul class="ml-4">
+              <li>English: Native</li>
+              <li class="">
+                <div class="oval-photo-frame bg-black min-w-100 realtive h-5">
+                  <div class="h-4 ml-0.5 my-0.5 absolute inline oval-photo-frame bg-purple-400 w-96"></div>
+                </div>
+              </li>
+              <li>Japanese: Fluent</li>
+              <li class="">
+                <div class="oval-photo-frame bg-black h-5">
+                  <div class="h-4 ml-0.5 my-0.5 inline absolute oval-photo-frame bg-purple-400 w-80"></div>
+                </div>
+              </li>
+              <li>Spanish: Proficient</li>
+              <li class=""><div class="oval-photo-frame bg-black min-w-100 realtive h-5"><div class="h-4 ml-0.5 my-0.5 absolute inline oval-photo-frame bg-purple-400 w-32"></div></div></li>
+            </ul>
+          </div>
+          <div class="lang-card">
+            <h1 class="comfortaa text-3xl text-center">Computer</h1>
+            <ul class="ml-4">
+              <li>HTML</li> 
+              <li>
+                <div class="oval-photo-frame bg-black h-5">
+
+                </div>
+              </li>
+              <li>CSS</li>
+              <li>
+                <div class="oval-photo-frame bg-black h-5">
+                  
+                </div>
+              </li>
+              <li>Javascript</li>
+              <li>
+                <div class="oval-photo-frame bg-black h-5">
+                  
+                </div>
+              </li>
+              <li>PHP</li>
+              <li>
+                <div class="oval-photo-frame bg-black h-5">
+                  
+                </div>
+              </li>
+              <li>MySQL</li>
+              <li>
+                <div class="oval-photo-frame bg-black h-5">
+                  
+                </div>
+              </li>
+              <li>Python</li>
+              <li>
+                <div class="oval-photo-frame bg-black h-5">
+                  
+                </div>
+              </li>
+              <li>Java</li>
+              <li>
+                <div class="oval-photo-frame bg-black h-5">
+                  
+                </div>
+              </li>
+              <li>Swift</li>
+              <li>
+                <div class="oval-photo-frame bg-black h-5">
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>    
     </section>
     <!-- SECTION SEVEN START (Frameworks) -->
-    <section id="sectionSevenContainer" class="flex-container">
+    <section id="sectionSevenContainer" class="flex-container justify-center items-center">
       <div>
         <h1 class="comfortaa text-4xl">Frameworks I have worked with</h1>
       </div>
@@ -421,7 +472,7 @@
       </div>
     </section>
     <!-- SECTION NINE START (LINK TO PHOTO SITE) -->
-    <section id="sectionNineContainer" class="flex-container">
+    <section id="sectionNineContainer" class="flex-container justify-center items-center">
       <div class="comfortaa text-4xl">Looking for my photography profile?</div>
       <div class="flex my-10">
         <div class="photoEX"><img src="public/assets/img/photoExp1.png" alt=""></div>
