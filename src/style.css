@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Press+Start+2P&family=Roboto+Mono:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gafata&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -18,8 +19,28 @@
   font-family: "Comfortaa", sans-serif;
 }
 
+.gafata {
+  font-family: "Gafata", sans-serif;
+}
+
 .oval-photo-frame {
   border-radius: 300px;
+}
+
+.border-1 {
+  border: solid black 1px;
+}
+
+.mt-3px {
+  margin-top: 3px;
+}
+
+.mt-1px {
+  margin-top: 1px;
+}
+
+.ml-1px {
+  margin-left: 1px;
 }
 
 .card {
@@ -28,6 +49,10 @@
 
 .doCard {
   @apply border-[1px] border-cyan-300 shadow-md shadow-black p-3 rounded bg-black bg-opacity-20 h-min;
+}
+
+.lang-card {
+  @apply border-[1px] border-cyan-300 shadow-md shadow-black p-3 rounded bg-black bg-opacity-20 h-min w-1/4;
 }
 
 .contactCard {
@@ -46,6 +71,10 @@ input[type="text"] {
   text-decoration: underline;
 }
 
+#sectionNineContainer a:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+}
 .frameworkBadge {
   @apply rounded-lg bg-violet-600 text-white px-2 py-0.5 mt-1 mx-0.5 h-min w-min;
 }
@@ -69,11 +98,10 @@ input[type="text"] {
 .flex-container {
   display: flex;
   min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  /* padding-top: 15%; */
+  /* justify-content: center;
+  align-items: center; */
   flex-direction: column;
-  /* background: rgba(194, 181, 5, 0.37); */
+  /* background: rgba(194, 181, 5, 0.7); */
 }
 
 .grid-container {

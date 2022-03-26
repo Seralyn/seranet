@@ -23,6 +23,12 @@ function init() {
       className: "seranetBG",
       duration: 4,
     });
+  // .from("#introCard", {
+  //   autoAlpha: 0,
+  //   ease: none,
+  //   xPercent: -10,
+  //   duration: 1.3,
+  // });
 
   // FADE OUT FIRST CARD
   gsap.to("#sectionOneContentContainer", {
