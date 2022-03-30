@@ -94,9 +94,9 @@ ScrollTrigger.batch([".portfolioSiteThumb", ".frameworkBadge"], {
   // batchMax: 3,   // maximum batch size (targets)
   onEnter: (batch) =>
     gsap.from(batch, {
-      opacity: 0,
+      autoAlpha: 0,
       // xPercent: -10,
-      scale: 3,
+      // scale: 3,
       duration: 0.5,
       delay: 1.5,
       ease: "power1.in",
@@ -105,6 +105,21 @@ ScrollTrigger.batch([".portfolioSiteThumb", ".frameworkBadge"], {
     }),
   // also onLeave, onEnterBack, and onLeaveBack
   // also most normal ScrollTrigger values like start, end, etc.
+});
+
+// ANIMATE LANGUAGES SECTION
+gsap.from("#sectionSixContainer .lang-card", {
+  autoAlpha: 0,
+  xPercent: -15,
+
+  scrollTrigger: {
+    trigger: "#sectionSixContainer",
+    start: "bottom center", //top of trigger element (#intro in this case) is at the top of the viewport
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+    // pin: true
+  },
 });
 
 // const doCardsThumbsTL = gsap.timeline();
