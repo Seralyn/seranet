@@ -14,11 +14,11 @@ function init() {
   const beginningTL = gsap.timeline();
 
   beginningTL
-    .from("body", {
-      ease: "power1.in",
-      duration: 2,
-      backgroundColor: "black",
-    })
+    // .from("body", {
+    //   ease: "power1.in",
+    //   duration: 2,
+    //   backgroundColor: "black",
+    // })
     .to("body", {
       className: "seranetBG",
       duration: 4,
