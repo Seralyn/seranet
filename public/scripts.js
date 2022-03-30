@@ -128,6 +128,20 @@ function init() {
       // pin: true
     },
   });
+
+  gsap.from("#sectionEightContainer .contact-child-flex-container", {
+    autoAlpha: 0,
+    xPercent: -15,
+
+    scrollTrigger: {
+      trigger: "#sectionEightContainer",
+      start: "top center", //top of trigger element (#intro in this case) is at the top of the viewport
+      end: "top top",
+      scrub: true,
+      markers: true,
+      // pin: true
+    },
+  });
 }
 
 window.addEventListener("load", function () {
