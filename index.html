@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="public/style.css" />
     <title>&lt/seralyn></title>
   </head>
-  <body class="bg-fixed bg-no-repeat">
+  <body class="bg-fixed bg-no-repeat seranetBG">
     <!-- START SECTION ONE (Intro) -->
     <section
       id="sectionOneContainer"
-      class="flex-container justify-center align-bottom"
+      class="flex-container"
     >
       <div id="sectionOneContentContainer" class="">
         <div class="card fixed top-1/3 left-[40%] w-min-[335px]" id="introCard">
@@ -68,7 +68,7 @@
       <div id="sectionThreeContentContainer" class="mt-96">
         <div class="gafata text-4xl text-center">What I do.</div>
       </div>
-      <div class="flex justify-around align-middle mt-24">
+      <div class="doContainer">
         <div class="doCard w-1/5" id="codeCard">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@
               d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
             />
           </svg>
-          <h2 class="text-3xl">Code</h2>
+          <h2 class="text-3xl">Frontend Code</h2>
           <h4 class="text-xl">
             HTML, CSS, Javascript. Tried and true as well as emerging
             technologies. (I'm looking at you, React). Let me develop it for
@@ -106,7 +106,7 @@
               d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
             />
           </svg>
-          <h2 class="text-3xl">Web Design</h2>
+          <h2 class="text-3xl">Web Design | UI/UX</h2>
           <h4 class="text-xl">
             Need a website designed for your small business? A portfolio for
             your work? Perhaps a rework of an existing website? That's what I
@@ -170,7 +170,7 @@
       class="flex-container justify-center align-middle relative"
     >
       <div id="sectionFourContentContainer" class="">
-        <div class="card absolute left-[40%] top-1/3 w-1/5 h-min">
+        <div class="itsFunCard">
           <h1 class="comfortaa text-4xl font-light">
             I like to develop websites.
           </h1>
@@ -184,100 +184,100 @@
     <!-- SECTION FIVE START (Website Examples)-->
     <section
       id="sectionFiveContainer"
-      class="flex-container justify-center align-middle relative"
+      class="flex-col min-h-screen"
     >
-      <div id="sectionFiveContentContainer" class="">
-        <div
-          class="absolute left-[15%] top-1/3 flex w-2/3 h-2/3 justify-between"
-        >
-          <div class="hoverForCard">
-            <a
-              target="_blank"
-              href="/portfolio/WeatherScraper/weatherScraperHome.php"
-            >
-              <img
-                class="portfolioSiteThumb shadow-md"
-                src="/public/assets/img/portfolioSiteThumbs/weatherScraperThumb.png"
-                alt=""
-              />
-              <div class="flex justify-center">
-                <div class="frameworkBadge">Bootstrap</div>
-                <div class="frameworkBadge">jQuery</div>
-                <div class="frameworkBadge">PHP</div>
-                <div class="frameworkBadge">ajax</div>
-              </div>
-            </a>
-          </div>
-          <div class="hoverForCard">
-            <a target="_blank" href="public/portfolio/foodNinja/public/index.html">
-              <img
-                class="portfolioSiteThumb shadow-md"
-                src="/public/assets/img/portfolioSiteThumbs/foodSiteThumb.png"
-                alt=""
-              />
-              <div class="flex justify-center">
-                <div class="frameworkBadge">Tailwind</div>
-              </div>
-            </a>
-          </div>
-          <div class="hoverForCard">
-            <a target="_blank" href="public/portfolio/guessMyNumber/public/index.html">
-              <img
-                class="portfolioSiteThumb shadow-md"
-                src="/public/assets/img/portfolioSiteThumbs/guessNumberThumb.png"
-                alt=""
-              />
-              <div class="flex justify-center">
-                <div class="frameworkBadge">Javascript</div>
-              </div>
-            </a>
-          </div>
+      <div
+        id="websitesRowOne"
+        class="websiteRow"
+      >
+        <div class="websiteCard">
+          <a
+            target="_blank"
+            href="/portfolio/WeatherScraper/weatherScraperHome.php"
+          >
+            <img
+              class="portfolioSiteThumb shadow-md"
+              src="/public/assets/img/portfolioSiteThumbs/weatherScraperThumb.png"
+              alt=""
+            />
+            <div class="flex justify-center">
+              <div class="frameworkBadge">Bootstrap</div>
+              <div class="frameworkBadge">jQuery</div>
+              <div class="frameworkBadge">PHP</div>
+              <div class="frameworkBadge">ajax</div>
+            </div>
+          </a>
         </div>
-        <!-- SECOND ROW OF WEBSITES -->
-        <div
-          class="absolute left-[15%] top-2/3 flex w-2/3 h-2/3 justify-between"
-        >
-          <div class="hoverForCard">
-            <a target="_blank" href="public/portfolio/LetsConnect/appLandingPage.html">
-              <img
-                class="portfolioSiteThumb shadow-md"
-                src="/public/assets/img/portfolioSiteThumbs/letsConnectThumb.png"
-                alt=""
-              />
-              <div class="flex justify-center">
-                <div class="frameworkBadge">Bootstrap</div>
-                <div class="frameworkBadge">jQuery</div>
-              </div>
-            </a>
-          </div>
-          <div class="hoverForCard">
-            <a target="_blank" href="www.goodmanmechanical.net">
-              <img
-                class="portfolioSiteThumb shadow-md"
-                src="/public/assets/img/portfolioSiteThumbs/goodmanMechicalThumb.png"
-                alt=""
-              />
-              <div class="flex justify-center">
-                <div class="frameworkBadge">Bootstrap</div>
-                <div class="frameworkBadge">PHP</div>
-              </div>
-            </a>
-          </div>
-          <div class="hoverForCard">
-            <a target="_blank" href="seralyn.net/mike">
-              <img
-                class="portfolioSiteThumb shadow-md"
-                src="/public/assets/img/portfolioSiteThumbs/mikesDBThumb.png"
-                alt=""
-              />
-              <div class="flex justify-center">
-                <div class="frameworkBadge">Javascript</div>
-                <div class="frameworkBadge">Bootstrap</div>
-                <div class="frameworkBadge">PHP</div>
-                <div class="frameworkBadge">MySQL</div>
-              </div>
-            </a>
-          </div>
+        <div class="websiteCard">
+          <a target="_blank" href="public/portfolio/foodNinja/public/index.html">
+            <img
+              class="portfolioSiteThumb shadow-md"
+              src="/public/assets/img/portfolioSiteThumbs/foodSiteThumb.png"
+              alt=""
+            />
+            <div class="flex justify-center">
+              <div class="frameworkBadge">Tailwind</div>
+            </div>
+          </a>
+        </div>
+        <div class="websiteCard">
+          <a target="_blank" href="public/portfolio/guessMyNumber/public/index.html">
+            <img
+              class="portfolioSiteThumb shadow-md"
+              src="/public/assets/img/portfolioSiteThumbs/guessNumberThumb.png"
+              alt=""
+            />
+            <div class="flex justify-center">
+              <div class="frameworkBadge">Javascript</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- SECOND ROW OF WEBSITES -->
+      <div
+        id="websitesRowTwo"
+        class="websiteRow"
+      >
+        <div class="websiteCard">
+          <a target="_blank" href="public/portfolio/LetsConnect/appLandingPage.html">
+            <img
+              class="portfolioSiteThumb shadow-md"
+              src="/public/assets/img/portfolioSiteThumbs/letsConnectThumb.png"
+              alt=""
+            />
+            <div class="flex justify-center">
+              <div class="frameworkBadge">Bootstrap</div>
+              <div class="frameworkBadge">jQuery</div>
+            </div>
+          </a>
+        </div>
+        <div class="websiteCard">
+          <a target="_blank" href="www.goodmanmechanical.net">
+            <img
+              class="portfolioSiteThumb shadow-md"
+              src="/public/assets/img/portfolioSiteThumbs/goodmanMechicalThumb.png"
+              alt=""
+            />
+            <div class="flex justify-center">
+              <div class="frameworkBadge">Bootstrap</div>
+              <div class="frameworkBadge">PHP</div>
+            </div>
+          </a>
+        </div>
+        <div class="websiteCard">
+          <a target="_blank" href="seralyn.net/mike">
+            <img
+              class="portfolioSiteThumb shadow-md"
+              src="/public/assets/img/portfolioSiteThumbs/mikesDBThumb.png"
+              alt=""
+            />
+            <div class="flex justify-center">
+              <div class="frameworkBadge">Javascript</div>
+              <div class="frameworkBadge">Bootstrap</div>
+              <div class="frameworkBadge">PHP</div>
+              <div class="frameworkBadge">MySQL</div>
+            </div>
+          </a>
         </div>
       </div>
     </section>

@@ -10,20 +10,6 @@ function init() {
   //   ease: "none",
   // });
 
-  // CHANGE BG FROM WHITE TO GRADIENT
-  const beginningTL = gsap.timeline();
-
-  beginningTL
-    // .from("body", {
-    //   ease: "power1.in",
-    //   duration: 2,
-    //   backgroundColor: "black",
-    // })
-    .to("body", {
-      className: "seranetBG",
-      duration: 4,
-    });
-
   // FADE OUT FIRST CARD
   gsap.to("#sectionOneContentContainer", {
     autoAlpha: 0,
@@ -51,7 +37,7 @@ function init() {
   });
 
   // PIN TEXT ABOUT WEBSITE EXAMPLES
-  gsap.from("#sectionFourContentContainer .card", {
+  gsap.from("#sectionFourContentContainer .itsFunCard", {
     opacity: 0,
     scrollTrigger: {
       trigger: "#sectionFourContainer",

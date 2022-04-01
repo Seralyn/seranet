@@ -518,16 +518,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 0;
 }
 
-.invisible{
-  visibility: hidden;
-}
-
 .fixed{
   position: fixed;
-}
-
-.absolute{
-  position: absolute;
 }
 
 .relative{
@@ -550,18 +542,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 66.666667%;
 }
 
-.left-\[15\%\]{
-  left: 15%;
-}
-
-.left-1\/2{
-  left: 50%;
-}
-
-.col-span-1{
-  grid-column: span 1 / span 1;
-}
-
 .m-60{
   margin: 15rem;
 }
@@ -580,21 +560,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
-.mx-20{
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
 .mt-10{
   margin-top: 2.5rem;
 }
 
 .mt-96{
   margin-top: 24rem;
-}
-
-.mt-24{
-  margin-top: 6rem;
 }
 
 .mt-32{
@@ -609,16 +580,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 1rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
 
 .mb-2{
   margin-bottom: 0.5rem;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
 }
 
 .mt-3{
@@ -661,22 +632,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2rem;
 }
 
-.mb-20{
-  margin-bottom: 5rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
-}
-
-.ml-14{
-  margin-left: 3.5rem;
-}
-
-.ml-10{
-  margin-left: 2.5rem;
-}
-
 .block{
   display: block;
 }
@@ -709,16 +664,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
-.h-min{
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-}
-
-.h-2\/3{
-  height: 66.666667%;
-}
-
 .h-5{
   height: 1.25rem;
 }
@@ -735,12 +680,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 8rem;
 }
 
-.h-2\/5{
-  height: 40%;
-}
-
-.h-14{
-  height: 3.5rem;
+.min-h-screen{
+  min-height: 100vh;
 }
 
 .w-6{
@@ -753,10 +694,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-8{
   width: 2rem;
-}
-
-.w-2\/3{
-  width: 66.666667%;
 }
 
 .w-\[97\%\]{
@@ -827,24 +764,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-20{
-  width: 5rem;
-}
-
-.w-24{
-  width: 6rem;
-}
-
-.-translate-x-1\/2{
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-y-1\/2{
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -857,8 +776,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   resize: both;
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.flex-col{
+  flex-direction: column;
 }
 
 .items-center{
@@ -879,10 +798,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between{
   justify-content: space-between;
-}
-
-.justify-around{
-  justify-content: space-around;
 }
 
 .justify-evenly{
@@ -913,24 +828,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
-.border-4{
-  border-width: 4px;
-}
-
 .border-r-4{
   border-right-width: 4px;
 }
 
 .border-b{
   border-bottom-width: 1px;
-}
-
-.border-b-4{
-  border-bottom-width: 4px;
-}
-
-.border-solid{
-  border-style: solid;
 }
 
 .border-cyan-300{
@@ -951,16 +854,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-red-200{
   --tw-border-opacity: 1;
   border-color: rgb(254 202 202 / var(--tw-border-opacity));
-}
-
-.border-purple-300{
-  --tw-border-opacity: 1;
-  border-color: rgb(216 180 254 / var(--tw-border-opacity));
-}
-
-.border-b-white{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-black{
@@ -1013,16 +906,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-slate-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-fixed{
   background-attachment: fixed;
 }
@@ -1068,21 +951,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.5rem;
 }
 
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .pb-12{
   padding-bottom: 3rem;
 }
@@ -1095,18 +963,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
-.pt-3{
-  padding-top: 0.75rem;
-}
-
-.pl-8{
-  padding-left: 2rem;
-}
-
-.pt-1{
-  padding-top: 0.25rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1117,10 +973,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .align-middle{
   vertical-align: middle;
-}
-
-.align-bottom{
-  vertical-align: bottom;
 }
 
 .text-4xl{
@@ -1151,11 +1003,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-light{
@@ -1203,16 +1050,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-slate-100{
-  --tw-text-opacity: 1;
-  color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
 .shadow-md{
@@ -1437,7 +1274,7 @@ input[type="text"]{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hoverForCard{
+.websiteCard{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1447,7 +1284,7 @@ input[type="text"]{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.hoverForCard:hover{
+.websiteCard:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1474,9 +1311,24 @@ input[type="text"]{
   /* background: rgba(194, 181, 5, 0.7); */
 }
 
+.websiteRow{
+  margin-top: 5rem;
+  display: flex;
+  height: 66.666667%;
+  width: 66.666667%;
+  justify-content: space-between;
+}
+
 .grid-container {
   display: grid;
   min-height: 100vh;
+}
+
+.doContainer{
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
 }
 
 .framework-grid-container {
@@ -1602,6 +1454,29 @@ input[type="text"]{
   min-height: 50%;
 }
 
+.itsFunCard{
+  position: absolute;
+  left: 40%;
+  top: 33.333333%;
+  width: 20%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(103 232 249 / var(--tw-border-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  padding: 0.75rem;
+  text-align: center;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 /* -------------ANIMATION RELATED CSS BELOW------------- */
 
 @-webkit-keyframes gradient {
@@ -1674,12 +1549,212 @@ input[type="text"]{
 
 /* // Adjusting layout for small screens */
 
-@media screen and (max-width: 760px) {
-  .container {
-    /* // 1 column grid */
-    grid-template-columns: 1fr;
-    /* // Fix image centering */
+@media screen and (max-width: 844px) {
+  .doContainer{
+    display: flex;
+  }
+
+  .doContainer{
+    flex-direction: column;
+  }
+
+  .doContainer{
+    align-items: center;
+  }
+
+  .doContainer{
+    justify-content: center;
+  }
+
+  .doCard{
+    margin-top: 3.5rem;
+  }
+
+  .doCard{
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+
+  .doCard{
+    min-width: 75%;
+  }
+
+  .doCard{
+    border-radius: 0.25rem;
+  }
+
+  .doCard{
+    border-width: 1px;
+  }
+
+  .doCard{
+    --tw-border-opacity: 1;
+    border-color: rgb(103 232 249 / var(--tw-border-opacity));
+  }
+
+  .doCard{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+
+  .doCard{
+    --tw-bg-opacity: 0.2;
+  }
+
+  .doCard{
+    padding: 0.75rem;
+  }
+
+  .doCard{
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .doCard{
+    --tw-shadow-color: #000;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+
+  #sectionFourContentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .itsFunCard{
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+
+  .itsFunCard{
+    min-width: 60%;
+  }
+
+  .itsFunCard{
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+
+  .itsFunCard{
+    border-radius: 0.25rem;
+  }
+
+  .itsFunCard{
+    border-width: 1px;
+  }
+
+  .itsFunCard{
+    --tw-border-opacity: 1;
+    border-color: rgb(103 232 249 / var(--tw-border-opacity));
+  }
+
+  .itsFunCard{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+
+  .itsFunCard{
+    --tw-bg-opacity: 0.2;
+  }
+
+  .itsFunCard{
+    padding: 0.75rem;
+  }
+
+  .itsFunCard{
+    text-align: center;
+  }
+
+  .itsFunCard{
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .itsFunCard{
+    --tw-shadow-color: #000;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+
+  .websiteRow{
+    height: 66.666667%;
+  }
+
+  .websiteRow{
+    width: 66.666667%;
+  }
+
+  .websiteRow{
+    flex-direction: column;
+  }
+
+  .websiteRow{
+    align-items: center;
+  }
+
+  .websiteRow{
+    justify-content: center;
+  }
+
+  .portfolioSiteThumb {
+    width: 70vw;
+    max-height: 33vh;
+  }
+
+  .framework-grid-container {
+    display: grid;
+    min-height: 80vh;
+    grid-gap: 80px;
+    /* background: rgba(82, 82, 82, 0.37); */
+    justify-content: center;
     justify-items: center;
+    align-items: center;
+    grid-template-columns:
+      1fr 1fr
+      1fr 1fr;
+    grid-auto-rows: -webkit-min-content;
+    grid-auto-rows: min-content;
+    grid-template-areas:
+      "empty header header empty"
+      "logo1 logo2 logo3 logo4"
+      "logo5 logo6 logo7 logo8";
+  }
+
+  .contact-flex-parent-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+  }
+
+  .contact-child-flex-container {
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-evenly */
+    /* background-color: orange; */
+  }
+
+  .contact-grid-container {
+    display: grid;
+    grid-gap: 80px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "map map"
+      "name message"
+      "email message"
+      "number message";
+    /* background-color: green; */
   }
 }
 
