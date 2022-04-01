@@ -800,10 +800,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.justify-evenly{
-  justify-content: space-evenly;
-}
-
 .gap-10{
   gap: 2.5rem;
 }
@@ -1477,6 +1473,12 @@ input[type="text"]{
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+#languageCardContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 /* -------------ANIMATION RELATED CSS BELOW------------- */
 
 @-webkit-keyframes gradient {
@@ -1703,6 +1705,73 @@ input[type="text"]{
   .portfolioSiteThumb {
     width: 70vw;
     max-height: 33vh;
+  }
+
+  #languageCardContainer{
+    margin-bottom: 10rem;
+  }
+
+  #languageCardContainer{
+    flex-direction: column;
+  }
+
+  #languageCardContainer{
+    align-items: center;
+  }
+
+  #languageCardContainer{
+    justify-content: space-evenly;
+  }
+
+  .lang-card{
+    margin-top: 5rem;
+  }
+
+  .lang-card{
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+
+  .lang-card{
+    width: 75%;
+  }
+
+  .lang-card{
+    border-radius: 0.25rem;
+  }
+
+  .lang-card{
+    border-width: 1px;
+  }
+
+  .lang-card{
+    --tw-border-opacity: 1;
+    border-color: rgb(103 232 249 / var(--tw-border-opacity));
+  }
+
+  .lang-card{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+
+  .lang-card{
+    --tw-bg-opacity: 0.2;
+  }
+
+  .lang-card{
+    padding: 0.75rem;
+  }
+
+  .lang-card{
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lang-card{
+    --tw-shadow-color: #000;
+    --tw-shadow: var(--tw-shadow-colored);
   }
 
   .framework-grid-container {
