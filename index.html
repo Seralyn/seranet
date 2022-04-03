@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="min-w-full" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, text/html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="public/style.css" />
+    <!-- <link rel="stylesheet" href="public/mobileStyle.css" /> -->
     <title>&lt/seralyn></title>
   </head>
   <body class="bg-fixed bg-no-repeat seranetBG">
     <!-- START SECTION ONE (Intro) -->
     <section
       id="sectionOneContainer"
-      class="flex-container"
+      class="flex-container items-center"
     >
       <div id="sectionOneContentContainer" class="">
-        <div class="card fixed top-1/3 left-[40%] w-min-[335px]" id="introCard">
+        <div class="card w-min-[335px]">
           <h1 class="comfortaa text-4xl font-light">
             <code>&lthello></code><br />
 
@@ -52,9 +53,9 @@
     </section>
     <!-- END SECTION ONE -->
     <!-- START SECTION TWO (PortraitSelf) -->
-    <section id="sectionTwoContainer" class="flex-container m-60 rounded-lg justify-center items-center">
+    <section id="sectionTwoContainer" class="flex-container items-center m-24 m-lg-60">
       <div class="contentContainer" id="sectionTwoContentContainer">
-        <div id="seraPhoto" class="oval-photo-frame border-[1px] border-cyan-300 shadow-md shadow-black overflow-hidden shadow-black">
+        <div class="oval-photo-frame seraPhoto">
           <img src="/public/assets/img/portraits/image2.jpg" alt="" />
         </div>
         <div id="textHolder">
@@ -184,7 +185,7 @@
     <!-- SECTION FIVE START (Website Examples)-->
     <section
       id="sectionFiveContainer"
-      class="flex-col min-h-screen"
+      class="flex-col min-h-screen min-w-full"
     >
       <div
         id="websitesRowOne"
@@ -273,7 +274,7 @@
             />
             <div class="flex justify-center">
               <div class="frameworkBadge">Javascript</div>
-              <div class="frameworkBadge">Bootstrap</div>
+              <!-- <div class="frameworkBadge">Bootstrap</div> -->
               <div class="frameworkBadge">PHP</div>
               <div class="frameworkBadge">MySQL</div>
             </div>
@@ -283,15 +284,15 @@
     </section>
 
     <!-- SECTION SIX START (Languages)-->
-    <section id="sectionSixContainer" class="flex-container justify-start mt-32">
+    <section id="sectionSixContainer" class="flex-container justify-center mt-32">
       <div class="flex justify-center mb-32">
         <h1 class="text-4xl gafata">Languages I speak</h1>
       </div>
 
-      <div id="languageCardContainer">
+      <div class="languageCardContainer">
         <div class="lang-card">
             <h1 class="comfortaa text-3xl text-center">Human</h1>
-            <ul class="ml-4">
+            <ul class="mr-1">
               <li>English: Native</li>
               <li class="">
                 <div class="oval-photo-frame bg-black min-w-100 border-2 border-black h-5">
@@ -314,7 +315,7 @@
           </div>
           <div class="lang-card">
             <h1 class="comfortaa text-3xl text-center">Computer</h1>
-            <ul class="ml-4">
+            <ul class="mr-1">
               <li>HTML</li> 
               <li>
                 <div class="oval-photo-frame bg-black min-w-100 border-2 border-black h-5">
@@ -421,14 +422,14 @@
     </section>
     <!-- SECTION EIGHT START (Contact/Resume/Location) -->
     <section id="sectionEightContainer" class="contact-flex-parent-container">
-      <div class="contact-child-flex-container w-2/12 justify-center">
+      <div class="contact-child-flex-container w-2/12 justify-center mr-20">
         <a href="public/assets/doc/SeralynCampbell-CV-FrontendDev.pdf" target="_blank" class="contactButton my-3 hover:scale-105">Download CV</a>
         <a href="public/assets/doc/履歴書-キャンベル.pdf" target="_blank" class="contactButton my-3 hover:translate-x-1">例暦書日本語版</a>
-        <a href="github.com/Seralyn" target="_blank" class="contactButton my-3 hover:bg-white hover:text-black">Github Profile</a>
+        <a href="https://github.com/Seralyn" target="_blank" class="contactButton my-3 hover:bg-white hover:text-black">Github Profile</a>
 
         
-        <a class= "mt-5 hover:scale-110 hover:translate-x-1" href="www.facebook.com/seralyncampbell"><img src="public/assets/ico/svg/facebook.svg" width="32px" alt="Facebook Profile" /></a>
-        <a class= "mt-5 hover:scale-110 hover:translate-x-1" href="www.instagram.com/seralyncampbell"><img src="public/assets/ico/svg/insta.svg" style="color: white;" width="28px" alt="Instagram Profile" /></a>
+        <a class= "mt-5 hover:scale-110 hover:translate-x-1" href="https://www.facebook.com/seralyncampbell"><img src="public/assets/ico/svg/facebook.svg" width="32px" alt="Facebook Profile" /></a>
+        <a class= "mt-5 hover:scale-110 hover:translate-x-1" href="https://www.instagram.com/seralyncampbell"><img src="public/assets/ico/svg/insta.svg" style="color: white;" width="28px" alt="Instagram Profile" /></a>
         <a class= "mt-5 hover:scale-110 hover:translate-x-1" href="https://www.linkedin.com/in/seralyn-campbell-0aba565/"><img src="public/assets/ico/svg/linkedin.svg" width="24px" alt="LinkedIn Profile" /></a>
       
       </div>
@@ -457,10 +458,10 @@
 
       <div class="contact-child-flex-container w-1/2 justify-center">
         <div class="contact-grid-container w-3/4 mb-4">
-          <div class="card grid-map"> 
+          <div class="card grid-map overflow-hidden"> 
             <iframe frameborder="0" scrolling="no"
             marginheight="0" marginwidth="0"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6483.136445692576!2d139.77720027784773!3d35.663008270794116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018897aedbe5ad5%3A0xc39f1c150c87bb4c!2sTsukishima%2C%20Chuo%20City%2C%20Tokyo%20104-0052!5e0!3m2!1sen!2sjp!4v1639624498823!5m2!1sen!2sjp" width="700" height="250" style="border:0;" allowfullscreen="" loading="lazy""
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6483.136445692576!2d139.77720027784773!3d35.663008270794116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018897aedbe5ad5%3A0xc39f1c150c87bb4c!2sTsukishima%2C%20Chuo%20City%2C%20Tokyo%20104-0052!5e0!3m2!1sen!2sjp!4v1639624498823!5m2!1sen!2sjp"  height="250" width="" style="border:0;" allowfullscreen="" loading="lazy""
             title="%3$s" aria-label="%3$s">
             </iframe>
           </div>
@@ -471,11 +472,13 @@
           <textarea
             name=""
             id=""
-            cols="38"
+            
             rows="12"
             class="textArea-card  grid-message"
             placeholder=" Message..."
           ></textarea>
+
+          <!-- cols="38" -->
           
         </div>
         <button class="contactButton hover:bg-purple-700 hover:scale-105">Send</button>

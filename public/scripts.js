@@ -19,12 +19,11 @@ function init() {
       start: "top top", //top of trigger element (#intro in this case) is at the top of the viewport
       end: "bottom center+=100",
       scrub: true,
-      markers: true,
     },
   });
 
   // FADE IN SERALYN PHOTO AND TEXT
-  gsap.from(["#seraPhoto", "#sectionTwoContainer h1"], {
+  gsap.from([".seraPhoto", "#sectionTwoContainer h1"], {
     autoAlpha: 0,
     scrollTrigger: {
       trigger: "#sectionTwoContainer",
@@ -32,7 +31,6 @@ function init() {
       end: "bottom center",
       pin: true,
       scrub: true,
-      markers: true,
     },
   });
 
@@ -45,7 +43,6 @@ function init() {
       end: "bottom center",
       pin: true,
       scrub: true,
-      markers: true,
     },
   });
 
@@ -96,7 +93,7 @@ function init() {
       start: "top center", //top of trigger element (#intro in this case) is at the top of the viewport
       end: "top top",
       scrub: true,
-      markers: true,
+
       // pin: true
     },
   });
@@ -110,7 +107,7 @@ function init() {
       start: "top center", //top of trigger element (#intro in this case) is at the top of the viewport
       end: "top top",
       scrub: true,
-      markers: true,
+
       // pin: true
     },
   });
@@ -124,7 +121,7 @@ function init() {
       start: "top center", //top of trigger element (#intro in this case) is at the top of the viewport
       end: "top top",
       scrub: true,
-      markers: true,
+
       // pin: true
     },
   });
