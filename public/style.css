@@ -564,16 +564,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.25rem;
 }
 
-.mr-20{
-  margin-right: 5rem;
-}
-
 .mt-5{
   margin-top: 1.25rem;
 }
 
 .mb-4{
   margin-bottom: 1rem;
+}
+
+.mt-64{
+  margin-top: 16rem;
 }
 
 .mb-2{
@@ -726,6 +726,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[15\%\]{
   width: 15%;
+}
+
+.w-60{
+  width: 15rem;
 }
 
 .w-2\/12{
@@ -1789,9 +1793,8 @@ input[type="text"]{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    /* background-color: pink; */
   }
 
   .contact-child-flex-container {
@@ -1799,23 +1802,17 @@ input[type="text"]{
     min-height: 70vh;
     align-items: center;
     flex-direction: column;
-    /* justify-content: space-evenly */
-    /* background-color: orange; */
+    margin-top: 5rem;
+    justify-content: space-evenly;
   }
 
   .contact-grid-container {
-    display: grid;
-    grid-gap: 80px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "map map"
-      "name message"
-      "email message"
-      "number message";
-    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sectionEightContainer iframe {
+    width: 380px;
   }
 }
 
@@ -1877,6 +1874,10 @@ input[type="text"]{
 }
 
 @media (min-width: 640px){
+  .sm\:mb-80{
+    margin-bottom: 20rem;
+  }
+
   .sm\:h-48{
     height: 12rem;
   }
@@ -1909,6 +1910,22 @@ input[type="text"]{
 }
 
 @media (min-width: 1024px){
+  .lg\:mr-20{
+    margin-right: 5rem;
+  }
+
+  .lg\:mb-32{
+    margin-bottom: 8rem;
+  }
+
+  .lg\:mt-0{
+    margin-top: 0px;
+  }
+
+  .lg\:flex{
+    display: flex;
+  }
+
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
