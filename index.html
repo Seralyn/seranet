@@ -466,23 +466,24 @@
             title="%3$s" aria-label="%3$s">
             </iframe>
           </div>
-          <input class="w-64" type="text" placeholder=" Name">
-          <input class="w-64" type="text" placeholder=" Email">
-          <input class="w-64" type="text" placeholder=" Number">
-          
-          <textarea
-            name=""
-            id=""
+          <form class="" action="form-to-email.php">
+            <div class="form-group flex-col justify-between">
+            <input class="w-64 py-5" id="name" name="name" type="text" placeholder=" Name">
+            <input class="w-64" id="email" name="email" type="text" placeholder=" Email">
+            <input class="w-64" id="subject" name="subject" type="text" placeholder=" Subject">
             
-            rows="12"
-            class="textArea-card  grid-message"
-            placeholder=" Message..."
-          ></textarea>
-
-          <!-- cols="38" -->
-          
-        </div>
-        <button class="contactButton hover:bg-purple-700 hover:scale-105">Send</button>
+            <textarea
+              name="message"
+              id="message"
+              
+              rows="12"
+              class="textArea-card  grid-message"
+              placeholder=" Message..."
+            ></textarea>          
+          </div>
+          </div>
+          <button class="contactButton hover:bg-purple-700 hover:scale-105">Send</button>
+        </form>
       </div>
     </section>
     <!-- SECTION NINE START (LINK TO PHOTO SITE) -->
