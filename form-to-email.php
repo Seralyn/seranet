@@ -22,11 +22,12 @@
     
     mail($to,$email_subject,$email_body,$headers);
     
-    // if (mail($to, $subject, $message, $headers)) {
-    //     header('Location: thank_you.html');
-    // }
-    // else {
-    //     echo "failed";
-    // }
+    if (mail($to, $subject, $message, $headers)) {
+        alert(`Message sent. Thanks!`)
+        // header('Location: thank_you.html');
+    }
+    else {
+        echo "failed";
+    }
     
 ?>
