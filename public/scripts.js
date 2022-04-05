@@ -86,7 +86,7 @@ function init() {
   // ANIMATE LANGUAGES SECTION
   gsap.from("#sectionSixContainer .lang-card", {
     autoAlpha: 0,
-    xPercent: -15,
+    xPercent: -20,
 
     scrollTrigger: {
       trigger: "#sectionSixContainer",
@@ -100,7 +100,7 @@ function init() {
 
   gsap.from("#sectionSevenContainer .frameworkLogo", {
     autoAlpha: 0,
-    xPercent: -15,
+    xPercent: -20,
 
     scrollTrigger: {
       trigger: "#sectionSevenContainer",
@@ -112,7 +112,7 @@ function init() {
     },
   });
 
-  gsap.from("#sectionEightContainer .contact-child-flex-container", {
+  gsap.from("#sectionEightContainer", {
     autoAlpha: 0,
     xPercent: -15,
 
