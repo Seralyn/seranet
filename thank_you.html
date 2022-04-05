@@ -4,9 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Message Received</title>
   </head>
-  <body>
-    <div class="card">Message Received.</div>
+
+  <style>
+    .seranetBG {
+      background: linear-gradient(-45deg, #060606, #e73ca3, #9412d0, #d52376);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+      color: white;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .comfortaa {
+      font-family: "Comfortaa", sans-serif;
+    }
+
+    .flex-container {
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .shadow-md {
+      --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+        0 2px 4px -2px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .shadow-black {
+      --tw-shadow-color: #000;
+      --tw-shadow: var(--tw-shadow-colored);
+    }
+
+    .p-3 {
+      padding: 0.75rem /* 12px */;
+    }
+
+    .rounded {
+      border-radius: 0.25rem /* 4px */;
+    }
+
+    .bg-black {
+      --tw-bg-opacity: 1;
+      background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    }
+
+    .bg-opacity-20 {
+      --tw-bg-opacity: 0.2;
+    }
+
+    .h-min {
+      height: min-content;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .mb-8 {
+      margin-bottom: 2rem;
+    }
+
+    a {
+      color: white;
+    }
+  </style>
+  <body class="seranetBG">
+    <div class="flex-container">
+      <div
+        class="comfortaa shadow-md shadow-black p-3 rounded bg-black bg-opacity-20 h-min text-center mb-8"
+      >
+        Message Received!
+      </div>
+      <button
+        class="comfortaa shadow-md shadow-black p-3 rounded bg-black bg-opacity-20 h-min text-center"
+      >
+        <a href="http://seralyn.net"><-- Go back</a>
+      </button>
+    </div>
   </body>
 </html>
