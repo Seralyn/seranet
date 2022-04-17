@@ -14,7 +14,7 @@ html {
 
 #dadJokesDisplayerContainer {
   border: 1px solid rgb(99, 132, 210);
-  width: 25rem;
+  width: 20rem;
   height: fit-content;
   color: rgb(222, 167, 56);
   display: flex;
