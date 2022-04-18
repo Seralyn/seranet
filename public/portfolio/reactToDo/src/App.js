@@ -16,12 +16,12 @@ class App extends Component {
       },
       {
         id: uuidv4(),
-        title: `poop a lot`,
+        title: `Sort Recycling`,
         completed: false,
       },
       {
         id: uuidv4(),
-        title: `Kiss the girlfriend`,
+        title: `Mail Invitations`,
         completed: false,
       },
     ],
