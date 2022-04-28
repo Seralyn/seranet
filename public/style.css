@@ -597,6 +597,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 10rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -631,14 +639,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-12{
   margin-top: 3rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
 }
 
 .block{
@@ -681,18 +681,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1rem;
 }
 
+.h-min{
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
 .h-20{
   height: 5rem;
 }
 
 .h-32{
   height: 8rem;
-}
-
-.h-min{
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
 }
 
 .min-h-screen{
@@ -917,12 +917,12 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: cover;
 }
 
-.p-5{
-  padding: 1.25rem;
-}
-
 .p-3{
   padding: 0.75rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .p-4{
@@ -1016,6 +1016,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-transform: uppercase;
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -1041,11 +1046,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1064,6 +1064,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .outline{
   outline-style: solid;
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition{
@@ -1307,8 +1311,9 @@ input[type="text"]{
 .websiteRow{
   margin-top: 5rem;
   display: flex;
-  height: 66.666667%;
+  flex-wrap: wrap;
   justify-content: space-around;
+  gap: 1rem;
 }
 
 .grid-container {

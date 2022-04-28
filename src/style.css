@@ -109,7 +109,7 @@ input[type="text"] {
 }
 
 .websiteRow {
-  @apply mt-20 flex h-2/3 justify-around;
+  @apply mt-20 flex flex-wrap gap-4 justify-around;
 }
 
 .grid-container {
