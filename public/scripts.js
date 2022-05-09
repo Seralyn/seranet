@@ -3,13 +3,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
 function init() {
-  // gsap.from("#sectionOneContainer", {
-  //   duration: 1,
-  //   //   y: -40,
-  //   opacity: 0,
-  //   ease: "none",
-  // });
-
   // FADE OUT FIRST CARD
   gsap.to("#sectionOneContentContainer", {
     autoAlpha: 0,
