@@ -1095,7 +1095,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .seranetBG {
-  background: linear-gradient(-45deg, #060606, #e73ca3, #9412d0, #d52376);
+  background: linear-gradient(-45deg, #901bcf, #e73c83, #9412d0, #d52352);
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
